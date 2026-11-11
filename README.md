@@ -37,3 +37,22 @@ That copy is committed in [`archive/arquivo-20170213/`](archive/arquivo-20170213
 `index.html`, `client.js`, `main.css`, `favicon.ico`, `robots.txt` and the UI images.
 The audio, ability sprites and a few other files referenced by `client.js` were never
 captured by arquivo.pt; `manifest.json` lists every hit and miss.
+
+## `server.js`: play back the archive locally
+
+Serves the fetched files with plain Node (no dependencies):
+
+```sh
+node server.js                                   # http://localhost:8080
+PORT=3000 node server.js
+ARCHIVE_DIR=mope_archive node server.js          # serve another fetched capture
+```
+
+It serves `<ARCHIVE_DIR>/mope.io/` first, then `www.mope.io/` and any other host
+folder, uses the same file-naming rules as `mope_archive.rb` (so `?query` URLs
+resolve), and returns 404 for files the archive never captured. Requests are logged,
+which makes it easy to see what's missing.
+
+The start page, menu and UI render as they did in February 2017, but the screen stops
+at **"Connecting..."**: `client.js` opens WebSockets to mope.io's original game servers
+(by IP, ports 7020/7500), which no longer exist.
