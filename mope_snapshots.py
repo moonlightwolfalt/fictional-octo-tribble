@@ -25,6 +25,7 @@ Usage:
   python3 mope_snapshots.py --window 30 --delay 2 --out archive
   python3 mope_snapshots.py --all                 # + every file arquivo.pt has
   python3 mope_snapshots.py --all --all-clients   # + names from every client version
+  python3 mope_snapshots.py --commoncrawl ...     # + Common Crawl as a second source
   python3 mope_snapshots.py --dry-run             # plan only, download nothing
 
 Only the Python standard library is used.
@@ -33,6 +34,8 @@ Only the Python standard library is used.
 from __future__ import annotations
 
 import argparse
+import gzip
+import zlib
 import itertools
 import json
 import os
@@ -51,6 +54,8 @@ DEFAULT_DATES = ["20170702", "20181119", "20190808", "20201218"]
 DOMAIN = "mope.io"
 CDX_URL = "https://arquivo.pt/wayback/cdx"
 REPLAY = "https://arquivo.pt/wayback"
+CC_INDEX = "https://index.commoncrawl.org"
+CC_DATA = "https://data.commoncrawl.org"
 USER_AGENT = "mope-snapshot-fetcher/1.0 (python)"
 
 ASSET_EXT = r"(?:png|jpe?g|gif|svg|webp|ico|mp3|ogg|wav|m4a|json|js|css|woff2?|ttf|txt|xml|html?)"
@@ -114,6 +119,11 @@ class Capture:
     url: str
     mime: str
     status: str
+    source: str = "arquivo.pt"
+    # Common Crawl only: where the record sits inside its WARC file
+    filename: str = ""
+    offset: int = 0
+    length: int = 0
 
 
 @dataclass
@@ -122,14 +132,14 @@ class Http:
     retries: int
     last: float = 0.0
 
-    def get(self, url: str) -> tuple[int, bytes, dict]:
+    def get(self, url: str, headers: dict | None = None) -> tuple[int, bytes, dict]:
         """GET with politeness delay and backoff on 429/5xx."""
         for attempt in range(self.retries + 1):
             wait = self.last + self.delay - time.time()
             if wait > 0:
                 time.sleep(wait)
             self.last = time.time()
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, **(headers or {})})
             try:
                 with urllib.request.urlopen(req, timeout=90) as res:
                     return res.status, res.read(), dict(res.headers)
@@ -137,7 +147,7 @@ class Http:
                 if e.code in (429, 500, 502, 503, 504) and attempt < self.retries:
                     retry_after = e.headers.get("Retry-After")
                     pause = float(retry_after) if retry_after and retry_after.isdigit() else 5 * 2**attempt
-                    log(f"    {e.code} from archive, waiting {pause:.0f}s")
+                    log(f"    {e.code} from {urllib.parse.urlsplit(url).hostname}, waiting {pause:.0f}s")
                     time.sleep(pause)
                     continue
                 return e.code, b"", dict(e.headers or {})
@@ -157,16 +167,23 @@ class Http:
 class CaptureIndex:
     def __init__(self, rows: list[dict]):
         self.by_key: dict[str, list[Capture]] = {}
+        self.add_rows(rows, "arquivo.pt")
+
+    def add_rows(self, rows: list[dict], source: str) -> int:
+        added = 0
         for r in rows:
             if str(r.get("status")) != "200":
                 continue
             key = url_key(r["url"])
             if not key:
                 continue
-            self.by_key.setdefault(key, []).append(
-                Capture(r["timestamp"], r["url"], r.get("mime", ""), "200"))
+            self.by_key.setdefault(key, []).append(Capture(
+                r["timestamp"], r["url"], r.get("mime", ""), "200", source,
+                r.get("filename", ""), int(r.get("offset") or 0), int(r.get("length") or 0)))
+            added += 1
         for caps in self.by_key.values():
             caps.sort(key=lambda c: c.timestamp)
+        return added
 
     @classmethod
     def load(cls, http: Http, cache: Path, refresh: bool) -> "CaptureIndex":
@@ -195,6 +212,112 @@ class CaptureIndex:
     def within(self, target: str, window_days: float) -> list[str]:
         return sorted(k for k, caps in self.by_key.items()
                       if any(days_between(c.timestamp, target) <= window_days for c in caps))
+
+
+# --- Common Crawl ------------------------------------------------------------
+
+
+def commoncrawl_rows(http: Http, out: Path, since: str, refresh: bool) -> list[dict]:
+    """Every Common Crawl capture under mope.io from crawls ending after `since`.
+
+    The index server is flaky, so each crawl's result is cached as soon as it
+    arrives and finished crawls are skipped on the next run."""
+    cache = out / ".commoncrawl-cdx-mope.io.jsonl"
+    done_file = out / ".commoncrawl-crawls-done.json"
+    crawls_file = out / ".commoncrawl-collinfo.json"
+    if refresh:
+        for f in (cache, done_file):
+            f.unlink(missing_ok=True)
+    rows = [json.loads(l) for l in cache.read_text().splitlines() if l.strip()] if cache.exists() else []
+    done = set(json.loads(done_file.read_text())) if done_file.exists() else set()
+
+    if crawls_file.exists() and not refresh:
+        crawls = json.loads(crawls_file.read_text())
+    else:
+        status, body, _ = http.get(f"{CC_INDEX}/collinfo.json")
+        if status != 200:
+            log(f"Common Crawl: list of crawls unavailable (HTTP {status}); using {len(rows)} cached rows")
+            return rows
+        crawls = json.loads(body)
+        crawls_file.write_text(json.dumps(crawls, indent=1))
+    todo = [c for c in crawls if c.get("to", "")[:4] >= since[:4] and c["id"] not in done]
+    log(f"Common Crawl: {len(crawls)} crawls, {len(todo)} to search since {since[:4]} "
+        f"({len(done)} already searched, {len(rows)} cached rows)")
+
+    for c in sorted(todo, key=lambda c: c["id"]):
+        q = urllib.parse.urlencode({"url": DOMAIN, "matchType": "domain", "output": "json"})
+        status, body, _ = http.get(f"{c['cdx-api']}?{q}")
+        if status == 404:   # "No Captures found"
+            found = []
+        elif status != 200:
+            log(f"  {c['id']}: index unavailable (HTTP {status}); will retry next run")
+            continue
+        else:
+            found = [json.loads(l) for l in body.decode("utf-8", "replace").splitlines()
+                     if l.strip().startswith("{")]
+            # only real page fetches; skip robots.txt and crawl-diagnostics records
+            found = [dict(r, crawl=c["id"]) for r in found
+                     if "/crawldiagnostics/" not in r.get("filename", "")]
+        rows += found
+        done.add(c["id"])
+        with cache.open("a") as fh:
+            for r in found:
+                fh.write(json.dumps(r) + "\n")
+        done_file.write_text(json.dumps(sorted(done)))
+        if found:
+            log(f"  {c['id']}: {len(found)} captures")
+    return rows
+
+
+def parse_warc_record(raw: bytes) -> tuple[int, bytes]:
+    """A gzipped WARC 'response' record -> (HTTP status, decoded body)."""
+    data = gzip.decompress(raw)
+    head, _, rest = data.partition(b"\r\n\r\n")          # WARC headers
+    http_head, _, body = rest.partition(b"\r\n\r\n")     # HTTP status + headers
+    lines = http_head.split(b"\r\n")
+    try:
+        status = int(lines[0].split()[1])
+    except (IndexError, ValueError):
+        return 0, b""
+    hdrs = {}
+    for line in lines[1:]:
+        k, _, v = line.partition(b":")
+        hdrs[k.strip().lower()] = v.strip().lower()
+    if hdrs.get(b"transfer-encoding") == b"chunked":
+        out, i = b"", 0
+        while i < len(body):
+            j = body.find(b"\r\n", i)
+            if j < 0:
+                break
+            size = int(body[i:j].split(b";")[0] or b"0", 16)
+            if size == 0:
+                break
+            out += body[j + 2:j + 2 + size]
+            i = j + 2 + size + 2
+        body = out
+    enc = hdrs.get(b"content-encoding")
+    if enc in (b"gzip", b"x-gzip"):
+        body = gzip.decompress(body)
+    elif enc == b"deflate":
+        body = zlib.decompress(body)
+    return status, body
+
+
+def fetch_capture(http: Http, cap: Capture) -> tuple[int, bytes]:
+    """Download the raw file a capture holds, from whichever archive has it."""
+    if cap.source == "commoncrawl":
+        rng = {"Range": f"bytes={cap.offset}-{cap.offset + cap.length - 1}"}
+        status, raw, _ = http.get(f"{CC_DATA}/{cap.filename}", headers=rng)
+        if status not in (200, 206):
+            return status, b""
+        try:
+            code, body = parse_warc_record(raw)
+        except (OSError, EOFError, zlib.error, ValueError) as e:
+            log(f"    could not unpack Common Crawl record ({e})")
+            return 0, b""
+        return (200, body) if code == 200 else (code, b"")
+    status, data, _ = http.get(f"{REPLAY}/{cap.timestamp}id_/{cap.url}")
+    return status, data
 
 
 # --- asset-name extraction -------------------------------------------------
@@ -444,7 +567,8 @@ class Snapshot:
     def _download(self, key: str, cap: Capture, reason: str) -> bytes | None:
         dest = local_path(self.root, key)
         off = days_between(cap.timestamp, self.target)
-        entry = {"url": cap.url, "capture": cap.timestamp, "days_from_target": round(off, 1),
+        entry = {"url": cap.url, "capture": cap.timestamp, "source": cap.source,
+                 "days_from_target": round(off, 1),
                  "reason": reason, "path": str(dest.relative_to(self.root))}
         cache_id = (cap.timestamp, cap.url)
         is_text = (cap.mime or "").lower().startswith(TEXT_TYPES) or key.endswith((".js", ".css", ".html", "/"))
@@ -454,7 +578,7 @@ class Snapshot:
             if not is_text:
                 return None
             if cache_id not in self.cache:
-                status, data, _ = self.http.get(f"{REPLAY}/{cap.timestamp}id_/{cap.url}")
+                status, data = fetch_capture(self.http, cap)
                 self.cache[cache_id] = data if status == 200 else b""
             return self.cache[cache_id] or None
         if dest.exists() and dest.stat().st_size > 0 and self.cache.get(cache_id) is None:
@@ -468,14 +592,14 @@ class Snapshot:
             data = dest.read_bytes()
             log(f"  copy   {key}  ({cap.timestamp}, already downloaded)")
         else:
-            status, data, _ = self.http.get(f"{REPLAY}/{cap.timestamp}id_/{cap.url}")
+            status, data = fetch_capture(self.http, cap)
             if status != 200:
                 log(f"  fail   {key} (HTTP {status})")
                 self.missing.setdefault(key, f"{reason}; download failed with HTTP {status}")
                 return None
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(data)
-            log(f"  saved  {key}  <- {cap.timestamp} ({off:.0f}d off, {len(data)} bytes)")
+            log(f"  saved  {key}  <- {cap.source} {cap.timestamp} ({off:.0f}d off, {len(data)} bytes)")
         self.cache[cache_id] = str(dest)
         entry["bytes"] = len(data)
         self.files.append(entry)
@@ -547,14 +671,15 @@ def all_clients(index: CaptureIndex, http: Http, out: Path, dry_run: bool) -> li
             continue
         for cap in caps:
             stem = key.rsplit("/", 1)[-1][:-3]
-            dest = folder / f"{stem}.js@{cap.timestamp}.js"
+            tag = "" if cap.source == "arquivo.pt" else "-cc"
+            dest = folder / f"{stem}.js@{cap.timestamp}{tag}.js"
             if dest.exists() and dest.stat().st_size > 0:
                 data = dest.read_bytes()
             elif dry_run:
                 log(f"  plan   {dest.name}")
                 continue
             else:
-                status, data, _ = http.get(f"{REPLAY}/{cap.timestamp}id_/{cap.url}")
+                status, data = fetch_capture(http, cap)
                 if status != 200:
                     log(f"  fail   {dest.name} (HTTP {status})")
                     continue
@@ -590,7 +715,7 @@ def all_clients(index: CaptureIndex, http: Http, out: Path, dry_run: bool) -> li
         reason = ("guessed from " if e["guessed"] else "named in ") + ", ".join(clients)
         pooled.append((k, (GUESS if e["guessed"] else "") + "all clients: " + reason))
         catalog.append({"name": k, "clients": clients, "guessed": e["guessed"],
-                        "archived_captures": [c.timestamp for c in caps]})
+                        "archived_captures": [f"{c.timestamp} {c.source}" for c in caps]})
     have = sum(1 for c in catalog if c["archived_captures"])
     if not dry_run:
         (out / "asset-catalog.json").write_text(json.dumps({
@@ -612,7 +737,10 @@ def main(argv=None) -> int:
     ap.add_argument("--window", type=float, default=45, help="also take every file captured within N days (default 45)")
     ap.add_argument("--delay", type=float, default=1.5, help="seconds between requests (default 1.5)")
     ap.add_argument("--retries", type=int, default=5)
-    ap.add_argument("--refresh-index", action="store_true", help="re-download arquivo.pt's capture index")
+    ap.add_argument("--refresh-index", action="store_true", help="re-download the capture indexes")
+    ap.add_argument("--commoncrawl", action="store_true",
+                    help="also search Common Crawl's crawls for mope.io and use its captures as a second source")
+    ap.add_argument("--cc-since", default="2016", help="only Common Crawl crawls from this year on (default 2016)")
     ap.add_argument("--all", action="store_true",
                     help="also include every mope.io file arquivo.pt ever captured (nearest copy to each date)")
     ap.add_argument("--all-clients", action="store_true",
@@ -629,6 +757,12 @@ def main(argv=None) -> int:
     out = Path(args.out)
     http = Http(delay=args.delay, retries=args.retries)
     index = CaptureIndex.load(http, out / ".arquivo-cdx-mope.io.jsonl", args.refresh_index)
+    if args.commoncrawl:
+        cc = commoncrawl_rows(Http(delay=max(args.delay, 2.0), retries=args.retries), out,
+                              args.cc_since, args.refresh_index)
+        n = index.add_rows(cc, "commoncrawl")
+        log(f"Common Crawl: {n} usable captures added "
+            f"({len({url_key(r['url']) for r in cc if str(r.get('status')) == '200'} - {None})} distinct files)")
     pooled = all_clients(index, http, out, args.dry_run) if args.all_clients else []
     cache: dict = {}
     for d in args.dates:

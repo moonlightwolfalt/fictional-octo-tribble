@@ -87,6 +87,23 @@ artwork (`assets/animals/...`) and answers old paths with its own page. Its item
 storage host (`s3.mope.io`) refuses access. So the other 331 can only come from the
 Wayback Machine (`mope_archive.rb`, run somewhere `web.archive.org` is reachable).
 
+### Common Crawl as a second source (`--commoncrawl`)
+
+`--commoncrawl` searches every [Common Crawl](https://commoncrawl.org) crawl since
+2016 (`--cc-since`) for mope.io. It merges those captures with arquivo.pt's, so each file
+comes from whichever archive has the capture nearest the date (each manifest entry
+says which). Common Crawl files are read by byte range from `data.commoncrawl.org`, then
+unpacked from their archive record (gzip, then the stored HTTP response, de-chunked and
+decompressed).
+
+Common Crawl's search server is flaky. Each crawl's result is cached as it arrives
+(`archive/.commoncrawl-cdx-mope.io.jsonl`, `.commoncrawl-crawls-done.json`), so a rerun
+only searches the crawls that failed.
+
+```sh
+python3 mope_snapshots.py --all --all-clients --commoncrawl 20170213 20170702 20181119 20190808 20201218
+```
+
 arquivo.pt saved `client.js` only on 2017-02-13 and 2018-04-21 (and in 2025), so the
 2017 date uses the 2017-02-13 client and the 2018–2020 dates use the 2018-04-21 client.
 
