@@ -1,0 +1,88 @@
+name: iOS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and test (iOS simulator)
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect project type
+        id: detect
+        run: |
+          gradle=false; xcode=""
+          # Kotlin Multiplatform: a Gradle wrapper plus an iOS target in a build script
+          if [ -x ./gradlew ] && grep -rqsE 'ios(SimulatorArm64|Arm64|X64)\(' --include='*.gradle.kts' .; then
+            gradle=true
+          fi
+          # Native or KMP host app: first .xcworkspace, else first .xcodeproj
+          xcode=$(find . -path ./build -prune -o -path '*/Pods' -prune -o -path '*/.build' -prune -o \
+                    -name '*.xcworkspace' -not -path '*.xcodeproj/*' -print | head -n1)
+          [ -z "$xcode" ] && xcode=$(find . -path ./build -prune -o -name '*.xcodeproj' -print | head -n1)
+          echo "gradle=$gradle" >> "$GITHUB_OUTPUT"
+          echo "xcode=$xcode" >> "$GITHUB_OUTPUT"
+          echo "Kotlin Multiplatform iOS targets: $gradle"
+          echo "Xcode project: ${xcode:-none}"
+          if [ "$gradle" = false ] && [ -z "$xcode" ]; then
+            echo "::notice::No iOS project found yet; skipping the build."
+          fi
+
+      - name: Set up JDK 17
+        if: steps.detect.outputs.gradle == 'true'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        if: steps.detect.outputs.gradle == 'true'
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Kotlin Multiplatform iOS tests
+        if: steps.detect.outputs.gradle == 'true'
+        run: ./gradlew iosSimulatorArm64Test --stacktrace
+
+      - name: Install CocoaPods dependencies
+        if: steps.detect.outputs.xcode != '' && hashFiles('**/Podfile') != ''
+        run: |
+          podfile=$(find . -name Podfile -not -path '*/Pods/*' | head -n1)
+          (cd "$(dirname "$podfile")" && pod install)
+
+      - name: Xcode build and test
+        if: steps.detect.outputs.xcode != ''
+        env:
+          XCODE_PATH: ${{ steps.detect.outputs.xcode }}
+        run: |
+          case "$XCODE_PATH" in
+            *.xcworkspace) target=(-workspace "$XCODE_PATH") ;;
+            *)             target=(-project "$XCODE_PATH") ;;
+          esac
+          scheme=$(xcodebuild "${target[@]}" -list -json \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); d=d.get("workspace") or d.get("project"); print(d["schemes"][0])')
+          echo "Using scheme: $scheme"
+          device=$(xcrun simctl list devices available -j \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; print(next(x["name"] for k,v in d.items() if "iOS" in k for x in v if x["name"].startswith("iPhone")))')
+          echo "Using simulator: $device"
+          common=("${target[@]}" -scheme "$scheme" -destination "platform=iOS Simulator,name=$device" CODE_SIGNING_ALLOWED=NO)
+          # Run tests; fall back to a plain build only if the scheme has no test action.
+          set +e
+          xcodebuild "${common[@]}" test 2>&1 | tee xcodebuild-test.log
+          status=${PIPESTATUS[0]}
+          set -e
+          if [ "$status" -ne 0 ] && grep -q 'is not currently configured for the test action' xcodebuild-test.log; then
+            echo "::notice::Scheme '$scheme' has no tests; building only."
+            xcodebuild "${common[@]}" build
+          else
+            exit "$status"
+          fi
