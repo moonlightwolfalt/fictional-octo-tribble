@@ -53,6 +53,16 @@ folder, uses the same file-naming rules as `mope_archive.rb` (so `?query` URLs
 resolve), and returns 404 for files the archive never captured. Requests are logged,
 which makes it easy to see what's missing.
 
-The start page, menu and UI render as they did in February 2017, but the screen stops
-at **"Connecting..."**: `client.js` opens WebSockets to mope.io's original game servers
-(by IP, ports 7020/7500), which no longer exist.
+`client.js` opens WebSockets to mope.io's original servers by IP (game on port 7020,
+master on 7500), which no longer exist. `server.js` therefore injects a small shim into
+`index.html` that reroutes `ws://<ip>:<port>` to `ws://<this host>/ws/<port>/<ip>`, and
+answers those sockets itself (`lib/websocket.js`, `lib/mope-server.js`, no dependencies):
+
+| Step | Client sends | Stand-in replies |
+|---|---|---|
+| Region ping test (7020) | `[255]` | `[255]` |
+| Master (7500) | `[200]` | `[100][u32 players][u16 n]{[u32 ip][u16 players]}` |
+| Game (7020) | (connects) | `[1][u16 players][u16 version=178]` → start menu |
+
+The client connects and reaches the start menu. Joining a game (`[2][name]...`) is only
+logged so far: the world/gameplay protocol isn't implemented yet.

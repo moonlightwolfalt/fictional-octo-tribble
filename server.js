@@ -8,15 +8,18 @@
 // Files come from <ARCHIVE_DIR>/mope.io/ (falling back to www.mope.io/ and any
 // other host folder mope_archive.rb wrote). No dependencies: Node built-ins only.
 //
-// Note: this serves the client only. The archived client.js connects over
-// WebSocket to mope.io's original game servers, which are long gone, so the
-// menu loads but you can't join a game.
+// It also stands in for mope.io's game and master servers (lib/mope-server.js):
+// index.html is served with a small shim that reroutes client.js's hard-coded
+// ws://<ip>:7020 / :7500 sockets to ws://<this host>/ws/<port>/<ip>, so the
+// client connects and reaches the start menu. Gameplay isn't implemented yet.
 
 "use strict";
 
 const fs = require("fs");
 const http = require("http");
 const path = require("path");
+const { acceptUpgrade } = require("./lib/websocket");
+const { MopeServer, BROWSER_SHIM } = require("./lib/mope-server");
 
 const PORT = Number(process.env.PORT) || 8080;
 const HOST = process.env.HOST || "0.0.0.0";
@@ -119,18 +122,42 @@ const server = http.createServer((req, res) => {
     return log(404);
   }
 
+  const type = MIME[path.extname(file).toLowerCase()] || "application/octet-stream";
+  if (type.startsWith("text/html")) {
+    // Inject the WebSocket shim before any page script runs.
+    let html = fs.readFileSync(file, "utf8");
+    html = /<head[^>]*>/i.test(html)
+      ? html.replace(/<head[^>]*>/i, (m) => m + "\n" + BROWSER_SHIM)
+      : BROWSER_SHIM + html;
+    const body = Buffer.from(html, "utf8");
+    res.writeHead(200, { "Content-Type": type, "Content-Length": body.length, "Cache-Control": "no-cache" });
+    res.end(req.method === "HEAD" ? undefined : body);
+    return log(200);
+  }
+
   const stat = fs.statSync(file);
-  res.writeHead(200, {
-    "Content-Type": MIME[path.extname(file).toLowerCase()] || "application/octet-stream",
-    "Content-Length": stat.size,
-    "Cache-Control": "no-cache",
-  });
+  res.writeHead(200, { "Content-Type": type, "Content-Length": stat.size, "Cache-Control": "no-cache" });
   if (req.method === "HEAD") {
     res.end();
   } else {
     fs.createReadStream(file).pipe(res);
   }
   log(200);
+});
+
+// --- game / master servers over WebSocket --------------------------------
+
+const clientJs = hostRoots().map((r) => path.join(r, "client.js")).find((f) => fs.existsSync(f));
+const mope = new MopeServer({ clientJsPath: clientJs });
+
+server.on("upgrade", (req, socket, head) => {
+  const m = /^\/ws\/(\d+)\/(\d{1,3}(?:\.\d{1,3}){3})\/?$/.exec(req.url.split("?")[0]);
+  if (!m) {
+    socket.end("HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n");
+    return;
+  }
+  const conn = acceptUpgrade(req, socket, head);
+  if (conn) mope.handle(conn, m[1], m[2]);
 });
 
 if (!fs.existsSync(ARCHIVE_DIR)) {
@@ -140,5 +167,6 @@ if (!fs.existsSync(ARCHIVE_DIR)) {
 
 server.listen(PORT, HOST, () => {
   console.log(`Serving ${ARCHIVE_DIR}`);
+  console.log(`Game/master stand-in: client v${mope.version}, ${mope.servers.length} servers known`);
   console.log(`mope.io archive at http://localhost:${PORT}/`);
 });
