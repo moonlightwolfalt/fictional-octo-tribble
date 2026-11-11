@@ -38,6 +38,36 @@ That copy is committed in [`archive/arquivo-20170213/`](archive/arquivo-20170213
 The audio, ability sprites and a few other files referenced by `client.js` were never
 captured by arquivo.pt; `manifest.json` lists every hit and miss.
 
+## `mope_snapshots.py`: rebuild mope.io for any date from arquivo.pt
+
+Fetches the copy of mope.io nearest each date, plus every asset its `client.js` builds at
+runtime. Only the Python standard library is needed.
+
+```sh
+python3 mope_snapshots.py                    # 20170702 20181119 20190808 20201218
+python3 mope_snapshots.py --all 20170213     # + every file arquivo.pt ever saved
+python3 mope_snapshots.py --dry-run          # plan only
+```
+
+For each date it takes:
+1. the start page nearest that date, and `client.js` (the page loads it as `client.js?x=…`);
+2. every file captured within `--window` days (default 45), i.e. that period's folders;
+3. every name it can rebuild from the HTML, CSS and `client.js`:
+   - `"skins/" + skinName + ".png"` and `+ "2.png"`, for each animal in `client.js`;
+   - `"./skins/winter/" + name + ".png"`;
+   - each food in normal and `_e` (edible outline) versions;
+   - ability, effect and sound files;
+4. with `--all`, every one of the ~96 mope.io files arquivo.pt holds.
+
+Each file comes from arquivo.pt's capture **nearest the date**, so a date's folder mixes
+captures. `snapshot-manifest.json` records each file's real capture date and how far that
+is from the target. It also lists every name the game asks for that arquivo.pt never
+saved. Existence is checked against arquivo.pt's capture index (cached in
+`archive/.arquivo-cdx-mope.io.jsonl`), so guessed names cost no requests.
+
+arquivo.pt saved `client.js` only on 2017-02-13 and 2018-04-21 (and in 2025), so the
+2017 date uses the 2017-02-13 client and the 2018–2020 dates use the 2018-04-21 client.
+
 ## `server.js`: play back the archive locally
 
 Serves the fetched files with plain Node (no dependencies):

@@ -36,3 +36,6 @@ google-services.json
 
 # mope.io archive output
 mope_archive/
+
+# Python
+__pycache__/
