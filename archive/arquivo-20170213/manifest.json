@@ -1,0 +1,206 @@
+[
+  {
+    "url": "http://mope.io/",
+    "timestamp": "20170213100949",
+    "path": "archive/arquivo-20170213/mope.io/index.html",
+    "content_type": "text/html",
+    "bytes": 10016,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/client.js",
+    "timestamp": "20170213101214",
+    "path": "archive/arquivo-20170213/mope.io/client.js",
+    "content_type": "application/javascript",
+    "bytes": 92481,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/favicon.ico",
+    "timestamp": "20170213101013",
+    "path": "archive/arquivo-20170213/mope.io/favicon.ico",
+    "content_type": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/appAd_and.png",
+    "timestamp": "20170213101150",
+    "path": "archive/arquivo-20170213/mope.io/img/appAd_and.png",
+    "content_type": "image/png",
+    "bytes": 2547,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/appAd_ios.png",
+    "timestamp": "20170213101139",
+    "path": "archive/arquivo-20170213/mope.io/img/appAd_ios.png",
+    "content_type": "image/png",
+    "bytes": 3351,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/logo.png",
+    "timestamp": "20170213101026",
+    "path": "archive/arquivo-20170213/mope.io/img/logo.png",
+    "content_type": "image/png",
+    "bytes": 13173,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/mode_norm.png",
+    "timestamp": "20170213101039",
+    "path": "archive/arquivo-20170213/mope.io/img/mode_norm.png",
+    "content_type": "image/png",
+    "bytes": 1879,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/mode_sandbox.png",
+    "timestamp": "20170213101050",
+    "path": "archive/arquivo-20170213/mope.io/img/mode_sandbox.png",
+    "content_type": "image/png",
+    "bytes": 2320,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/settings.png",
+    "timestamp": "20170213101102",
+    "path": "archive/arquivo-20170213/mope.io/img/settings.png",
+    "content_type": "image/png",
+    "bytes": 957,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/sound_on.png",
+    "timestamp": "20170213101116",
+    "path": "archive/arquivo-20170213/mope.io/img/sound_on.png",
+    "content_type": "image/png",
+    "bytes": 1224,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/splixpromo.png",
+    "timestamp": "20170213101203",
+    "path": "archive/arquivo-20170213/mope.io/img/splixpromo.png",
+    "content_type": "image/png",
+    "bytes": 10510,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/img/x.png",
+    "timestamp": "20170213101127",
+    "path": "archive/arquivo-20170213/mope.io/img/x.png",
+    "content_type": "image/png",
+    "bytes": 2843,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/main.css",
+    "timestamp": "20170213101002",
+    "path": "archive/arquivo-20170213/mope.io/main.css",
+    "content_type": "text/css",
+    "bytes": 7700,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/robots.txt",
+    "timestamp": "20170213100936",
+    "path": "archive/arquivo-20170213/mope.io/robots.txt",
+    "content_type": "text/plain",
+    "bytes": 25,
+    "saved": true
+  },
+  {
+    "url": "http://www.mope.io/updates.txt",
+    "timestamp": "20170213100949",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/share_banner.jpg",
+    "timestamp": "20191010213555",
+    "path": "archive/arquivo-20170213/mope.io/img/share_banner.jpg",
+    "content_type": "image/jpeg",
+    "bytes": 18608,
+    "saved": true
+  },
+  {
+    "url": "http://mope.io/audio/music_menu.mp3",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/audio/music_game.mp3",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/sound_off.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/audio/click.mp3",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/ability_claw.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/ability_backkick.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/ability_crocBite.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/snowball.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/fire.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/fire2.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/ability_dive.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/2.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  },
+  {
+    "url": "http://mope.io/img/instr_eatsymbol.png",
+    "timestamp": "20170213101214",
+    "saved": false,
+    "status": "404"
+  }
+]

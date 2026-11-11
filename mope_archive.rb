@@ -1,11 +1,16 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# mope_archive.rb — fetch the files of mope.io as the Wayback Machine saw it
+# mope_archive.rb — fetch the files of mope.io as a web archive saw it
 # on October 2nd, 2016 (or any other day you pass in).
 #
+# Archives (--archive):
+#   wayback  web.archive.org (default), has 2016 captures
+#   arquivo  arquivo.pt (Portuguese web archive); its earliest mope.io copy
+#            is 2017-02-13, so use: --archive arquivo --date 20170213
+#
 # How it works:
-#   1. Ask the Wayback CDX API for every capture under mope.io on that day.
+#   1. Ask the archive's CDX API for every capture under mope.io on that day.
 #   2. Download each capture in its raw form (the `id_` flag, so no Wayback
 #      toolbar or rewritten links) into a local folder mirroring the site.
 #   3. Optionally (--crawl) read the HTML/CSS/JS we got and also fetch any
@@ -17,6 +22,7 @@
 #   ruby mope_archive.rb --crawl              # also chase referenced assets
 #   ruby mope_archive.rb --date 20161015 -o out --delay 1.5
 #   ruby mope_archive.rb --list               # just print what's available
+#   ruby mope_archive.rb --archive arquivo --date 20170213
 #
 # Only uses the Ruby standard library.
 
@@ -28,14 +34,27 @@ require "set"
 require "uri"
 
 class MopeArchive
-  CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
-  WAYBACK      = "https://web.archive.org/web"
+  # Both archives speak the Wayback CDX dialect, with different field names
+  # and replay prefixes.
+  ARCHIVES = {
+    "wayback" => {
+      cdx: "https://web.archive.org/cdx/search/cdx",
+      replay: "https://web.archive.org/web",
+      fields: { original: "original", mimetype: "mimetype", status: "statuscode" }
+    },
+    "arquivo" => {
+      cdx: "https://arquivo.pt/wayback/cdx",
+      replay: "https://arquivo.pt/wayback",
+      fields: { original: "url", mimetype: "mime", status: "status" }
+    }
+  }.freeze
   USER_AGENT   = "mope-archive-fetcher/1.0 (ruby #{RUBY_VERSION})"
   TEXTUAL      = %r{\A(text/|application/(javascript|x-javascript|json|xml))}.freeze
 
   Capture = Struct.new(:timestamp, :original, :mimetype, :status, :digest, keyword_init: true)
 
   def initialize(opts)
+    @archive = ARCHIVES.fetch(opts[:archive])
     @domain  = opts[:domain]
     @date    = opts[:date]
     @out     = opts[:out]
@@ -50,17 +69,18 @@ class MopeArchive
   # --- CDX listing ---------------------------------------------------------
 
   def captures
+    f = @archive[:fields]
     params = {
       url: @domain,
       matchType: "domain",          # mope.io and any subdomains
       from: @date,
       to: @date,
       output: "json",
-      fl: "timestamp,original,mimetype,statuscode,digest",
-      filter: "statuscode:200",
+      fl: "timestamp,#{f[:original]},#{f[:mimetype]},#{f[:status]},digest",
+      filter: "#{f[:status]}:200",
       collapse: "urlkey"            # one capture per distinct URL
     }
-    uri = URI(CDX_ENDPOINT)
+    uri = URI(@archive[:cdx])
     uri.query = URI.encode_www_form(params)
     res = http_get(uri)
     unless res.is_a?(Net::HTTPSuccess)
@@ -69,12 +89,17 @@ class MopeArchive
     body = res.body.to_s
     return [] if body.strip.empty?
 
-    rows = JSON.parse(body)
-    header = rows.shift
-    rows.map do |row|
-      h = header.zip(row).to_h
-      Capture.new(timestamp: h["timestamp"], original: h["original"],
-                  mimetype: h["mimetype"], status: h["statuscode"], digest: h["digest"])
+    records =
+      if body.lstrip.start_with?("[")       # Wayback: one array, header row first
+        rows = JSON.parse(body)
+        header = rows.shift
+        rows.map { |row| header.zip(row).to_h }
+      else                                  # arquivo: one JSON object per line
+        body.each_line.reject { |l| l.strip.empty? }.map { |l| JSON.parse(l) }
+      end
+    records.map do |h|
+      Capture.new(timestamp: h["timestamp"], original: h[f[:original]],
+                  mimetype: h[f[:mimetype]].to_s, status: h[f[:status]], digest: h["digest"])
     end
   end
 
@@ -83,7 +108,7 @@ class MopeArchive
   def run(list_only: false)
     caps = captures
     if caps.empty?
-      warn "No captures of #{@domain} found on #{@date}. Try another --date."
+      warn "No captures of #{@domain} found on #{@date} in this archive. Try another --date (or --archive)."
       return
     end
 
@@ -120,7 +145,7 @@ class MopeArchive
       return [dest, guess_type(dest)]
     end
 
-    res = http_get(URI("#{WAYBACK}/#{timestamp}id_/#{url}"))
+    res = http_get(URI("#{@archive[:replay]}/#{timestamp}id_/#{url}"))
     unless res.is_a?(Net::HTTPSuccess)
       puts "  miss   #{url} (#{res ? res.code : 'no response'})"
       @manifest << { url: url, timestamp: timestamp, saved: false, status: res&.code }
@@ -129,7 +154,7 @@ class MopeArchive
 
     FileUtils.mkdir_p(File.dirname(dest))
     File.binwrite(dest, res.body)
-    actual_ts = res.uri.to_s[%r{/web/(\d{14})}, 1] || timestamp
+    actual_ts = res.uri.to_s[%r{/(\d{14})id_/}, 1] || timestamp
     type = res["content-type"].to_s.split(";").first
     puts "  saved  #{url} -> #{dest} (#{res.body.bytesize} bytes)"
     @manifest << { url: url, timestamp: actual_ts, path: dest, content_type: type,
@@ -217,12 +242,13 @@ class MopeArchive
 end
 
 if $PROGRAM_NAME == __FILE__
-  opts = { domain: "mope.io", date: "20161002", out: "mope_archive",
+  opts = { archive: "wayback", domain: "mope.io", date: "20161002", out: "mope_archive",
            delay: 1.0, retries: 4, crawl: false, force: false }
   list_only = false
 
   OptionParser.new do |o|
     o.banner = "Usage: ruby mope_archive.rb [options]"
+    o.on("-a", "--archive NAME", MopeArchive::ARCHIVES.keys, "wayback (default) or arquivo") { |v| opts[:archive] = v }
     o.on("-d", "--date YYYYMMDD", "Day to fetch (default 20161002)") { |v| opts[:date] = v }
     o.on("-o", "--out DIR", "Output directory (default mope_archive)") { |v| opts[:out] = v }
     o.on("--domain HOST", "Domain to fetch (default mope.io)") { |v| opts[:domain] = v }
