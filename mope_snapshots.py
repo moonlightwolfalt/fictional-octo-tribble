@@ -24,6 +24,7 @@ Usage:
   python3 mope_snapshots.py 20170702 20201218     # just these
   python3 mope_snapshots.py --window 30 --delay 2 --out archive
   python3 mope_snapshots.py --all                 # + every file arquivo.pt has
+  python3 mope_snapshots.py --all --all-clients   # + names from every client version
   python3 mope_snapshots.py --dry-run             # plan only, download nothing
 
 Only the Python standard library is used.
@@ -234,12 +235,16 @@ def _match_paren(text: str, i: int) -> int:
 
 
 TERNARY = re.compile(r'\?\s*(["\'])(.*?)\1\s*:\s*(["\'])(.*?)\3\s*\)?\s*$', re.S)
-IDENT_EXPR = re.compile(r'[\w$]+(?:\s*\([^()]*\))?(?:\s*\.\s*[\w$]+(?:\s*\([^()]*\))?)*')
+# identifiers with .prop, ['prop'] and call() chains: a.b(c)['skinName']
+_ACCESS = r'(?:\s*\.\s*[\w$]+|\s*\[[^\[\]]*\]|\s*\([^()]*\))'
+IDENT_EXPR = re.compile(r'[\w$]+' + _ACCESS + '*')
 
 
 def _operand(text: str, i: int):
     """Parse one '+' operand at i. Returns (kind, value, end)."""
     i = _skip_ws(text, i)
+    while i < len(text) and text[i] == "+":   # unary plus: 'a'+ +x
+        i = _skip_ws(text, i + 1)
     if i >= len(text):
         return None, None, i
     ch = text[i]
@@ -287,11 +292,16 @@ def extract_templates(js: str) -> list[list[tuple[str, object]]]:
     return found
 
 
+SMALL_GUESSES = [""] + [str(i) for i in range(0, 13)]
+
+
 def expand_template(parts, skin_names: list[str], guesses: list[str], cap: int = 4000):
     """Return (names, guessed): guessed is True when a slot held an unknown
     variable and was filled with guesses (skin names, small numbers)."""
     options = []
     guessed = False
+    if any(k == "var" and "skinName" in str(v) for k, v in parts):
+        guesses = SMALL_GUESSES  # the skinName slot is the real variable; keep others small
     for kind, val in parts:
         if kind == "lit":
             options.append([val])
@@ -333,8 +343,46 @@ def html_css_refs(text: str) -> list[str]:
     return [r.strip() for r in refs if not r.strip().startswith(("data:", "javascript:", "mailto:", "#"))]
 
 
+SKIN_NAME = re.compile(r"""(?:\.skinName|\[\s*["']skinName["']\s*\])\s*=\s*["']([\w/.-]+)["']""")
+
+
 def skin_names_in(js: str) -> list[str]:
-    return sorted(set(re.findall(r'skinName\s*=\s*["\']([\w/.-]+)["\']', js)))
+    """.skinName="x" (2017/2018) and ['skinName']='x' (obfuscated 2025)."""
+    return sorted(set(SKIN_NAME.findall(js)))
+
+
+def decode_js(text: str) -> str:
+    r"""Undo the \xNN / \uNNNN escapes obfuscated clients (2025) use for strings."""
+    if "\\x" not in text and "\\u" not in text:
+        return text
+
+    def ch(m):
+        c = chr(int(m.group(1), 16))
+        # Keep characters that would end or break a string literal escaped.
+        return {"'": "\\'", '"': '\\"', "\\": "\\\\", "\n": "\\n", "\r": "\\r"}.get(c, c)
+
+    text = re.sub(r"\\x([0-9a-fA-F]{2})", ch, text)
+    return re.sub(r"\\u([0-9a-fA-F]{4})", ch, text)
+
+
+def extract_js_names(text: str):
+    """Every asset name a JS client asks for.
+
+    Returns (refs, skin_names, templates); refs are relative names, prefixed
+    with GUESS when a template slot had to be guessed."""
+    text = decode_js(text)
+    refs = plain_literals(text)
+    names = skin_names_in(text)
+    templates = []
+    guesses = sorted(set(names) | {n.split("/")[-1] for n in names} | set(SMALL_GUESSES))
+    for parts in extract_templates(text):
+        shown = "+".join(repr(v) if k == "lit" else ("(" + "|".join(v) + ")" if k == "choice"
+                         else "<" + str(v)[:30] + ">") for k, v in parts)
+        expanded, guessed = expand_template(parts, names, guesses)
+        templates.append({"template": shown, "candidates": len(expanded), "guessed_slot": guessed})
+        tag = GUESS if guessed else ""
+        refs += [tag + e for e in expanded]
+    return refs, names, templates
 
 
 # --- per-date snapshot -----------------------------------------------------
@@ -350,6 +398,7 @@ class Snapshot:
     dry_run: bool
     cache: dict
     take_all: bool = False
+    pooled: list = field(default_factory=list)  # (key, reason) named by every client
     files: list = field(default_factory=list)
     missing: dict = field(default_factory=dict)
     templates: list = field(default_factory=list)
@@ -365,6 +414,7 @@ class Snapshot:
         if self.take_all:
             for key in sorted(self.index.by_key):
                 queue.append((key, "--all: every file arquivo.pt has, nearest copy"))
+        queue += self.pooled
 
         while queue:
             key, reason = queue.pop(0)
@@ -435,22 +485,9 @@ class Snapshot:
         text = data.decode("utf-8", "replace")
         base = cap.url if not key.endswith("/") else cap.url.rstrip("/") + "/"
         if key.endswith((".js",)) or "javascript" in (cap.mime or ""):
-            refs = plain_literals(text)
-            names = skin_names_in(text)
+            refs, names, templates = extract_js_names(text)
             self.skins.update(names)
-            if names:
-                # Unknown slots: skin names (also bare, e.g. "yeti" for
-                # "arctic/yeti"), small numbers, or nothing.
-                guesses = sorted(set(names) | {n.split("/")[-1] for n in names}
-                                 | {str(i) for i in range(0, 13)} | {""})
-                for parts in extract_templates(text):
-                    shown = "+".join(repr(v) if k == "lit" else ("(" + "|".join(v) + ")" if k == "choice" else "<" + str(v)[:30] + ">")
-                                     for k, v in parts)
-                    expanded, guessed = expand_template(parts, names, guesses)
-                    self.templates.append({"from": key, "template": shown, "candidates": len(expanded),
-                                           "guessed_slot": guessed})
-                    tag = GUESS if guessed else ""
-                    refs += [tag + e for e in expanded]
+            self.templates += [dict(t, **{"from": key}) for t in templates]
             why = f"named in {key.split('/', 1)[1] or 'index.html'}"
         else:
             refs = html_css_refs(text) + plain_literals(text)
@@ -492,6 +529,79 @@ class Snapshot:
             f"{len(manifest['not_archived'])} names never archived")
 
 
+# --- every client, every version --------------------------------------------
+
+CLIENT_FILES = ("client.js", "ui_bundle.js")
+
+
+def all_clients(index: CaptureIndex, http: Http, out: Path, dry_run: bool) -> list:
+    """Download every archived version of the game clients into out/clients/,
+    pool every asset name they ask for, and write out/asset-catalog.json.
+    Returns (key, reason) pairs to add to every snapshot."""
+    folder = out / "clients"
+    folder.mkdir(parents=True, exist_ok=True)
+    named: dict = {}   # key -> {"clients": set, "guessed": bool}
+    versions = []
+    for key, caps in sorted(index.by_key.items()):
+        if not key.endswith(CLIENT_FILES):
+            continue
+        for cap in caps:
+            stem = key.rsplit("/", 1)[-1][:-3]
+            dest = folder / f"{stem}.js@{cap.timestamp}.js"
+            if dest.exists() and dest.stat().st_size > 0:
+                data = dest.read_bytes()
+            elif dry_run:
+                log(f"  plan   {dest.name}")
+                continue
+            else:
+                status, data, _ = http.get(f"{REPLAY}/{cap.timestamp}id_/{cap.url}")
+                if status != 200:
+                    log(f"  fail   {dest.name} (HTTP {status})")
+                    continue
+                dest.write_bytes(data)
+                log(f"  saved  {dest.name} ({len(data)} bytes)")
+            refs, skins, templates = extract_js_names(data.decode("utf-8", "replace"))
+            base = cap.url.split("?")[0]
+            certain = set()
+            for ref in refs:
+                guessed = ref.startswith(GUESS)
+                if guessed:
+                    ref = ref[len(GUESS):]
+                k = url_key(urllib.parse.urljoin(base, ref.replace("\\/", "/")))
+                if not k:
+                    continue
+                entry = named.setdefault(k, {"clients": set(), "guessed": True})
+                entry["clients"].add(dest.name)
+                if not guessed:
+                    entry["guessed"] = False
+                    certain.add(k)
+            versions.append({"client": dest.name, "capture": cap.timestamp, "skin_names": len(skins),
+                             "templates": len(templates), "asset_names": len(certain),
+                             "path_patterns": sorted({t["template"] for t in templates})})
+            log(f"  {dest.name}: {len(certain)} asset names, {len(skins)} skin names, "
+                f"{len(templates)} templates")
+
+    pooled, catalog = [], []
+    for k, e in sorted(named.items()):
+        caps = index.by_key.get(k, [])
+        if e["guessed"] and not caps:
+            continue  # a guessed combination that matches nothing archived
+        clients = sorted(e["clients"])
+        reason = ("guessed from " if e["guessed"] else "named in ") + ", ".join(clients)
+        pooled.append((k, (GUESS if e["guessed"] else "") + "all clients: " + reason))
+        catalog.append({"name": k, "clients": clients, "guessed": e["guessed"],
+                        "archived_captures": [c.timestamp for c in caps]})
+    have = sum(1 for c in catalog if c["archived_captures"])
+    if not dry_run:
+        (out / "asset-catalog.json").write_text(json.dumps({
+            "source": "asset names extracted from every archived mope.io client version",
+            "client_versions": versions, "names": len(catalog), "archived_by_arquivo_pt": have,
+            "never_archived": len(catalog) - have, "assets": catalog}, indent=2))
+    log(f"All clients: {len(catalog)} asset names; {have} archived by arquivo.pt, "
+        f"{len(catalog) - have} never archived")
+    return pooled
+
+
 # --- main ------------------------------------------------------------------
 
 
@@ -505,6 +615,10 @@ def main(argv=None) -> int:
     ap.add_argument("--refresh-index", action="store_true", help="re-download arquivo.pt's capture index")
     ap.add_argument("--all", action="store_true",
                     help="also include every mope.io file arquivo.pt ever captured (nearest copy to each date)")
+    ap.add_argument("--all-clients", action="store_true",
+                    help="download every archived client.js/ui_bundle.js version into <out>/clients/, "
+                         "extract every asset name from all of them for every date, and write "
+                         "<out>/asset-catalog.json")
     ap.add_argument("--dry-run", action="store_true", help="show what would be fetched")
     args = ap.parse_args(argv)
 
@@ -515,10 +629,12 @@ def main(argv=None) -> int:
     out = Path(args.out)
     http = Http(delay=args.delay, retries=args.retries)
     index = CaptureIndex.load(http, out / ".arquivo-cdx-mope.io.jsonl", args.refresh_index)
+    pooled = all_clients(index, http, out, args.dry_run) if args.all_clients else []
     cache: dict = {}
     for d in args.dates:
         Snapshot(target=d, root=out / f"arquivo-{d}", index=index, http=http,
-                 window=args.window, dry_run=args.dry_run, cache=cache, take_all=args.all).run()
+                 window=args.window, dry_run=args.dry_run, cache=cache, take_all=args.all,
+                 pooled=list(pooled)).run()
     return 0
 
 

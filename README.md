@@ -46,6 +46,7 @@ runtime. Only the Python standard library is needed.
 ```sh
 python3 mope_snapshots.py                    # 20170702 20181119 20190808 20201218
 python3 mope_snapshots.py --all 20170213     # + every file arquivo.pt ever saved
+python3 mope_snapshots.py --all --all-clients 20170213 20170702 20181119 20190808 20201218
 python3 mope_snapshots.py --dry-run          # plan only
 ```
 
@@ -64,6 +65,27 @@ captures. `snapshot-manifest.json` records each file's real capture date and how
 is from the target. It also lists every name the game asks for that arquivo.pt never
 saved. Existence is checked against arquivo.pt's capture index (cached in
 `archive/.arquivo-cdx-mope.io.jsonl`), so guessed names cost no requests.
+
+### Every client, every version (`--all-clients`)
+
+`--all-clients` downloads every archived game client into `archive/clients/`:
+`client.js` from 2017-02-13, 2018-04-21, 2025-09-05 and 2025-12-10, plus `ui_bundle.js`
+from June 2021. The 2025 clients are obfuscated (every string is `\x..` escaped), so the
+script decodes them first. It then extracts every asset name from all of them, using
+the 2025 `['skinName']=` and `obj['prop']` syntax as well as the older forms, and looks
+for each in every date.
+
+`archive/asset-catalog.json` lists each name, which clients ask for it, and the
+arquivo.pt captures that hold it. It also has every raw path pattern per client (329
+in the 2025 client), for paths with a part that can't be known for certain (species
+number, season ID).
+
+Result: the clients name **340 assets**: 183 skins, 53 food and simple objects, 19
+ability images, 17 seasonal objects, 7 sounds, and more. **arquivo.pt holds only 9 of
+them**, all already in the snapshots. The live mope.io site is a 2026 rewrite with new
+artwork (`assets/animals/...`) and answers old paths with its own page. Its item
+storage host (`s3.mope.io`) refuses access. So the other 331 can only come from the
+Wayback Machine (`mope_archive.rb`, run somewhere `web.archive.org` is reachable).
 
 arquivo.pt saved `client.js` only on 2017-02-13 and 2018-04-21 (and in 2025), so the
 2017 date uses the 2017-02-13 client and the 2018–2020 dates use the 2018-04-21 client.
