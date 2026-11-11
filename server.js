@@ -110,6 +110,13 @@ const server = http.createServer((req, res) => {
     return log(400);
   }
 
+  if (url.pathname === "/status.json") {
+    const body = Buffer.from(JSON.stringify(mope.status(), null, 2));
+    res.writeHead(200, { "Content-Type": "application/json; charset=utf-8", "Content-Length": body.length, "Cache-Control": "no-cache" });
+    res.end(req.method === "HEAD" ? undefined : body);
+    return log(200);
+  }
+
   let file;
   try {
     file = resolveFile(url.pathname, url.search.slice(1));

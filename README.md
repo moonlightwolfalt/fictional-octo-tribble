@@ -56,13 +56,43 @@ which makes it easy to see what's missing.
 `client.js` opens WebSockets to mope.io's original servers by IP (game on port 7020,
 master on 7500), which no longer exist. `server.js` therefore injects a small shim into
 `index.html` that reroutes `ws://<ip>:<port>` to `ws://<this host>/ws/<port>/<ip>`, and
-answers those sockets itself (`lib/websocket.js`, `lib/mope-server.js`, no dependencies):
+answers those sockets itself (no dependencies):
+
+- `lib/websocket.js`: minimal RFC 6455 WebSocket server on Node built-ins.
+- `lib/mope-server.js`: region ping test, master server list, game server welcome.
+- `lib/mope-world.js`: the game world, a stand-in for the unpublished 2017 server.
 
 | Step | Client sends | Stand-in replies |
 |---|---|---|
 | Region ping test (7020) | `[255]` | `[255]` |
 | Master (7500) | `[200]` | `[100][u32 players][u16 n]{[u32 ip][u16 players]}` |
 | Game (7020) | (connects) | `[1][u16 players][u16 version=178]` → start menu |
+| Join | `[2][str name][u16 w][u16 h][u8 party][u8 ?][u8 spectate]` | `[2][1][mode][u32 myId]…[minimap]` |
+| Every 150 ms | `[5][i16 mouseX][i16 mouseY]`, `[21][u8 run]`, `[17]` resize, `[19]` chat | `[4][camera][stats]{new}{moved}{removed}`, `[8]` leaderboard |
 
-The client connects and reaches the start menu. Joining a game (`[2][name]...`) is only
-logged so far: the world/gameplay protocol isn't implemented yet.
+Server→client strings end with a NUL byte counted in the length: the client's
+`readString` drops the last byte, so without it every name loses its last letter.
+
+### The world
+
+The map is generated at startup (6000×6000) with the three biomes the client draws:
+
+```
++--------------------------------------+
+|               ARCTIC                 |  1200 tall, white (type 27)
++-------+----------------------+-------+
+| OCEAN |         LAND         | OCEAN |  oceans 800 wide (type 19)
++-------+----------------------+-------+
+```
+
+Land gets lakes, mud, hills, burrows, berries and mushrooms; the oceans get kelp and
+plankton; the arctic gets icy lakes and berries. All of it shows on the minimap.
+
+Behind the start menu you spectate a slowly drifting camera. Press **Play** to spawn as a
+mouse on land: steer with the mouse, hold left-click to run, eat food for XP, and drink
+from lakes/the ocean to refill the water bar. Everyone shares one world, whichever old
+server the client picks. `http://localhost:8080/status.json` lists the players and object
+counts.
+
+Not implemented yet: upgrading to other animals, abilities, combat and damage, and most
+artwork (only the menu images were archived, so animals are drawn as plain circles).
