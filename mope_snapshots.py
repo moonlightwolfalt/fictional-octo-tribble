@@ -334,9 +334,7 @@ def html_css_refs(text: str) -> list[str]:
 
 
 def skin_names_in(js: str) -> list[str]:
-    names = sorted(set(re.findall(r'skinName\s*=\s*["\']([\w/.-]+)["\']', js)))
-    # Also the bare animal name of "arctic/yeti" style names.
-    return sorted(set(names) | {n.split("/")[-1] for n in names})
+    return sorted(set(re.findall(r'skinName\s*=\s*["\']([\w/.-]+)["\']', js)))
 
 
 # --- per-date snapshot -----------------------------------------------------
@@ -371,6 +369,12 @@ class Snapshot:
         while queue:
             key, reason = queue.pop(0)
             if key in self.done:
+                # A name first reached through a guessed template slot may also
+                # be named for certain (e.g. skins/fox.png via skinName); keep
+                # the certain reason so it's reported as genuinely missing.
+                old = self.missing.get(key)
+                if old and old.startswith(GUESS) and not reason.startswith(GUESS):
+                    self.missing[key] = reason
                 continue
             self.done.add(key)
             cap = self.index.nearest(key, self.target)
@@ -435,7 +439,10 @@ class Snapshot:
             names = skin_names_in(text)
             self.skins.update(names)
             if names:
-                guesses = sorted(set(names) | {str(i) for i in range(0, 13)} | {""})
+                # Unknown slots: skin names (also bare, e.g. "yeti" for
+                # "arctic/yeti"), small numbers, or nothing.
+                guesses = sorted(set(names) | {n.split("/")[-1] for n in names}
+                                 | {str(i) for i in range(0, 13)} | {""})
                 for parts in extract_templates(text):
                     shown = "+".join(repr(v) if k == "lit" else ("(" + "|".join(v) + ")" if k == "choice" else "<" + str(v)[:30] + ">")
                                      for k, v in parts)

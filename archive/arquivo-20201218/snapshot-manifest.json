@@ -799,14 +799,11 @@
     "arctic/wolf",
     "arctic/wolverine",
     "arctic/yeti",
-    "arcticfox",
-    "arctichare",
     "bear",
     "blackdragon",
     "bluewhale",
     "boaConstrictor",
     "cheetah",
-    "chipmunk",
     "cobra",
     "crab",
     "croc",
@@ -827,27 +824,19 @@
     "killerwhale",
     "kingcrab",
     "kraken",
-    "lemming",
     "lion",
-    "mammoth",
     "mole",
     "mouse",
-    "muskox",
     "octopus",
-    "penguin",
     "pig",
-    "polarbear",
     "pufferfish",
     "rabbit",
-    "reindeer",
     "rhino",
     "sabertoothtiger",
     "seahorse",
-    "seal",
     "shark",
     "shrimp",
     "snail",
-    "snowleopard",
     "squid",
     "stingray",
     "swordfish",
@@ -855,10 +844,6 @@
     "trex",
     "trout",
     "turtle",
-    "walrus",
-    "wolf",
-    "wolverine",
-    "yeti",
     "zebra"
   ],
   "templates_expanded": [
@@ -1015,181 +1000,181 @@
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'2.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'2.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     },
     {
       "from": "mope.io/client.js",
       "template": "'skins/'+<W(Ss).skinName>+'.png'",
-      "candidates": 76,
+      "candidates": 61,
       "guessed_slot": false
     }
   ],
@@ -1503,7 +1488,15 @@
       "reason": "referenced by index.html"
     },
     {
+      "name": "mope.io/skins/arctic/arcticfox.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/arcticfox2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/arctichare.png",
       "reason": "named in client.js"
     },
     {
@@ -1511,7 +1504,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/chipmunk.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/chipmunk2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/lemming.png",
       "reason": "named in client.js"
     },
     {
@@ -1519,7 +1520,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/mammoth.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/mammoth2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/muskox.png",
       "reason": "named in client.js"
     },
     {
@@ -1527,7 +1536,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/penguin.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/penguin2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/polarbear.png",
       "reason": "named in client.js"
     },
     {
@@ -1535,7 +1552,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/reindeer.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/reindeer2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/seal.png",
       "reason": "named in client.js"
     },
     {
@@ -1547,7 +1572,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/walrus.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/walrus2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/wolf.png",
       "reason": "named in client.js"
     },
     {
@@ -1555,7 +1588,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/arctic/wolverine.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/arctic/wolverine2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti.png",
       "reason": "named in client.js"
     },
     {
@@ -1563,15 +1604,11 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/arcticfox2.png",
-      "reason": "named in client.js"
-    },
-    {
-      "name": "mope.io/skins/arctichare2.png",
-      "reason": "named in client.js"
-    },
-    {
       "name": "mope.io/skins/bear2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/blackdragon.png",
       "reason": "named in client.js"
     },
     {
@@ -1579,7 +1616,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/bluewhale.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/bluewhale2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/boaConstrictor.png",
       "reason": "named in client.js"
     },
     {
@@ -1587,11 +1632,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/cheetah.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/cheetah2.png",
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/chipmunk2.png",
+      "name": "mope.io/skins/cobra.png",
       "reason": "named in client.js"
     },
     {
@@ -1599,7 +1648,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/crab.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/crab2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/croc.png",
       "reason": "named in client.js"
     },
     {
@@ -1607,7 +1664,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/deer.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/deer2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/donkey.png",
       "reason": "named in client.js"
     },
     {
@@ -1615,7 +1680,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/dragon.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/dragon2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/duck.png",
       "reason": "named in client.js"
     },
     {
@@ -1623,7 +1696,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/duckling.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/duckling2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/eagle.png",
       "reason": "named in client.js"
     },
     {
@@ -1631,11 +1712,23 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/elephant.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/elephant2.png",
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/fox.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/fox2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/giantSpider.png",
       "reason": "named in client.js"
     },
     {
@@ -1647,7 +1740,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/gorilla.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/gorilla2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/hedgehog.png",
       "reason": "named in client.js"
     },
     {
@@ -1655,7 +1756,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/hippo.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/hippo2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/jellyfish.png",
       "reason": "named in client.js"
     },
     {
@@ -1663,7 +1772,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/killerwhale.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/killerwhale2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/kingcrab.png",
       "reason": "named in client.js"
     },
     {
@@ -1671,11 +1788,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/kraken.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/kraken2.png",
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/lemming2.png",
+      "name": "mope.io/skins/lion.png",
       "reason": "named in client.js"
     },
     {
@@ -1683,7 +1804,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/mammoth2.png",
+      "name": "mope.io/skins/mole.png",
       "reason": "named in client.js"
     },
     {
@@ -1695,7 +1816,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/muskox2.png",
+      "name": "mope.io/skins/octopus.png",
       "reason": "named in client.js"
     },
     {
@@ -1703,7 +1824,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/penguin2.png",
+      "name": "mope.io/skins/pig.png",
       "reason": "named in client.js"
     },
     {
@@ -1711,7 +1832,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/polarbear2.png",
+      "name": "mope.io/skins/pufferfish.png",
       "reason": "named in client.js"
     },
     {
@@ -1719,11 +1840,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/rabbit.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/rabbit2.png",
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/reindeer2.png",
+      "name": "mope.io/skins/rhino.png",
       "reason": "named in client.js"
     },
     {
@@ -1731,7 +1856,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/sabertoothtiger.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/sabertoothtiger2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/seahorse.png",
       "reason": "named in client.js"
     },
     {
@@ -1739,7 +1872,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/seal2.png",
+      "name": "mope.io/skins/shark.png",
       "reason": "named in client.js"
     },
     {
@@ -1751,11 +1884,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/snail.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/snail2.png",
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/snowleopard2.png",
+      "name": "mope.io/skins/squid.png",
       "reason": "named in client.js"
     },
     {
@@ -1763,7 +1900,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/stingray.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/stingray2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/swordfish.png",
       "reason": "named in client.js"
     },
     {
@@ -1771,7 +1916,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/tiger.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/tiger2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/trex.png",
       "reason": "named in client.js"
     },
     {
@@ -1779,7 +1932,15 @@
       "reason": "named in client.js"
     },
     {
+      "name": "mope.io/skins/trout.png",
+      "reason": "named in client.js"
+    },
+    {
       "name": "mope.io/skins/trout2.png",
+      "reason": "named in client.js"
+    },
+    {
+      "name": "mope.io/skins/turtle.png",
       "reason": "named in client.js"
     },
     {
@@ -1787,19 +1948,7 @@
       "reason": "named in client.js"
     },
     {
-      "name": "mope.io/skins/walrus2.png",
-      "reason": "named in client.js"
-    },
-    {
-      "name": "mope.io/skins/wolf2.png",
-      "reason": "named in client.js"
-    },
-    {
-      "name": "mope.io/skins/wolverine2.png",
-      "reason": "named in client.js"
-    },
-    {
-      "name": "mope.io/skins/yeti2.png",
+      "name": "mope.io/skins/zebra.png",
       "reason": "named in client.js"
     },
     {
@@ -1919,5 +2068,5 @@
       "reason": "referenced by index.html"
     }
   ],
-  "guessed_names_not_archived": 893
+  "guessed_names_not_archived": 837
 }
