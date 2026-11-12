@@ -1,0 +1,4114 @@
+{
+  "source": "asset names extracted from every archived mope.io client version",
+  "client_versions": [
+    {
+      "client": "client.js@20170213101214.js",
+      "capture": "20170213101214",
+      "skin_names": 44,
+      "templates": 22,
+      "asset_names": 111,
+      "path_patterns": [
+        "'./skins/'+<i>+'.png'",
+        "'./skins/winter/'+<i>+'.png'",
+        "'img/banana'+(_e|)+'.png'",
+        "'img/coconut'+(_e|)+'.png'",
+        "'img/lillypad'+(_e|)+'.png'",
+        "'img/pear'+(_e|)+'.png'",
+        "'img/rasp'+(_e|)+'.png'",
+        "'skins/'+<An(si).skinName>+'.png'",
+        "'skins/'+<An(si).skinName>+'2.png'"
+      ]
+    },
+    {
+      "client": "client.js@20180421014457.js",
+      "capture": "20180421014457",
+      "skin_names": 61,
+      "templates": 55,
+      "asset_names": 188,
+      "path_patterns": [
+        "'./skins/'+<i>+'.png'",
+        "'img/'+<d>+'_wing1.png'",
+        "'img/'+<d>+'_wing2.png'",
+        "'img/'+<e>+'egg'+(_e|)+'.png'",
+        "'img/ability_crabSmash'+<this.specType>+'.png'",
+        "'img/ability_tigerSlash'+<this.specType>+'.png'",
+        "'img/arcticNut'+(_e|)+'.png'",
+        "'img/banana'+(_e|)+'.png'",
+        "'img/carrot'+(_e|)+'.png'",
+        "'img/clam'+(_e|)+'.png'",
+        "'img/cloudberry'+(_e|)+'.png'",
+        "'img/coconut'+(_e|)+'.png'",
+        "'img/conch'+(_e|)+'.png'",
+        "'img/healingStone'+<e>+'.png'",
+        "'img/kelp'+(_e|)+'.png'",
+        "'img/lillypad'+(_e|)+'.png'",
+        "'img/meat'+(_e|)+'.png'",
+        "'img/pear'+(_e|)+'.png'",
+        "'img/rasp'+(_e|)+'.png'",
+        "'img/riverCurrent'+<this.riverSpecT>+'.png'",
+        "'img/santa/gifts/'+<this.specType>+'.png'",
+        "'img/seaweed'+(_e|)+'.png'",
+        "'img/starfish'+(_e|)+'.png'",
+        "'img/watermelon'+(_e|)+'.png'",
+        "'img/watermelonSlice'+(_e|)+'.png'",
+        "'skins/'+<W(Ss).skinName>+'.png'",
+        "'skins/'+<W(Ss).skinName>+'2.png'"
+      ]
+    },
+    {
+      "client": "client.js@20250905144100.js",
+      "capture": "20250905144100",
+      "skin_names": 93,
+      "templates": 406,
+      "asset_names": 238,
+      "path_patterns": [
+        "'./assets/s/2/gameobj/78/stone'+<_0x56402a>+'.png'",
+        "'/'+<_0x1abd77>+'_wing1.png'",
+        "'/'+<_0x1abd77>+'_wing2.png'",
+        "'/assets/s/'+<_0x3aa2c0>+'/img/disasters/'+<_0x3373b2(_0xb70d33['specType'>+'.png'",
+        "'/assets/s/'+<_0x3aa2c0>+'/img/pumpkin/'+<_0x13a7b0['specType']>+'/0.png'",
+        "'/pigeon_wing'+<_0x3d622d>+'.png'",
+        "'/props/'+<_0x2a9710>+'/beards/'+<this['props']['beardsColor']>+'.png'",
+        "'/props/'+<_0x2a9710>+'/glasses/'+<this['props']['glassesColor']>+'.png'",
+        "'/props/'+<_0x2a9710>+'/hats/'+<this['props']['hatsColor']>+'.png'",
+        "'/props/'+<_0x2a9710>+'/scarfs/'+<this['props']['scarfsColor']>+'.png'",
+        "'/snowyowl_wing'+<_0x259366>+'.png'",
+        "'arctic/bear/'+<this['aniSpecies']>+'/slash.png'",
+        "'arctic/snowleopard/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/snowleopard.png'",
+        "'assets/powerups/powerup-'+<_0x2edbaa['name']>+'.png'",
+        "'charge/'+<_0x4dd1bb>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x192751>+'_'+<this['hasPopped']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x258522>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x271105>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x27cdd4>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x361ea1>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x400a44>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x4159a3>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x51453d>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x527f79>+'.jpg'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x54cf56>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x550dc8>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x767f9a>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['biomeType']>+'/'+<this['frameNumber']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['carcassType']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['chilliType']>+'/'+<_0x14e8c0>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['curBiome']>+'/cave_bottom.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['curBiome']>+'/cave_top.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'_'+<this['frame']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'_'+<this['speciesType']>+(_e|)+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+(_e|)+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['specType']>+'/'+<_0x18b323>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/'+<_0x3173fa>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/'+<_0x5a6a8c>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/0.png'",
+        "'gameobj/'+<this['oType']>+'/0.png'",
+        "'gameobj/'+<this['oType']>+'/incentive/'+<this['stoneIncentive']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/meteorite.png'",
+        "'gameobj/'+<this['oType']>+'/snow-flake.png'",
+        "'gameobj/'+<this['oType']>+'/stone'+<_0x57fc94>+'.png'",
+        "'gameobj/'+<this['oType']>+'/stone_undefended.png'",
+        "'gameobj/'+<this['oType']>+<this['getObjSpecies']()>+'/'+<_0x38fea2>+'.png'",
+        "'gameobj/101/'+<_0x143507>+'/'+<_0x5a59a5>+'.png'",
+        "'gameobj/101/'+<_0x44154e>+'/'+<_0x40611c>+'_'+<this['eventType']>+'.png'",
+        "'gameobj/101/'+<_0x4dfd59>+'/'+<_0x3293c7>+'_'+<this['eventType']>+'.png'",
+        "'gameobj/101/'+<_0x509293>+'/xmas/'+<_0x17abd0>+'.png'",
+        "'gameobj/101/'+<_0x50cc04>+'/'+<this['getTrunk']()>+'.png'",
+        "'gameobj/40/current'+<this['getDirectionName']()>+'.png'",
+        "'gameobj/70/0/'+<_0x456a6d>+'.png'",
+        "'gameobj/70/0/'+<_0xc8f54e>+'.png'",
+        "'img/'+<_0x1cbd53>+'.png'",
+        "'img/'+<_0x585a55>+(_e|)+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/base.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/'+<_0x36d6b1>+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/'+<_0xb6283>+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/stem.png'",
+        "'img/arcticNut'+(_e|)+'.png'",
+        "'img/arcticano/'+<_0x1d607d>+'.png'",
+        "'img/banana'+(_e|)+'.png'",
+        "'img/beachball/'+<this['pumpkinType']>+'/'+<this['frameNumber']>+'.png'",
+        "'img/beehive'+(_e|)+'.png'",
+        "'img/carrot'+(_e|)+'.png'",
+        "'img/clam'+(_e|)+'.png'",
+        "'img/cloudberry'+(_e|)+'.png'",
+        "'img/coconut'+(_e|)+'.png'",
+        "'img/coin/coin'+(_e|)+'.png'",
+        "'img/conch'+(_e|)+'.png'",
+        "'img/desert/'+<_0x38f41c>+'/mouth/'+<_0x55cd0f>+'.png'",
+        "'img/dirt/'+<this['eff_dirtType']>+'/0.png'",
+        "'img/dirt/'+<this['eff_dirtType']>+'/1.png'",
+        "'img/disasters/'+<this['tornadoFace']>+'.png'",
+        "'img/disasters/'+<this['tornadoType']>+'.png'",
+        "'img/fire/'+<_0x482257>+'/0.png'",
+        "'img/fire/'+<_0x580e5f>+'/0.png'",
+        "'img/floaters/'+<this['floaterType']>+'.png'",
+        "'img/floaters/'+<this['floaterType']>+'_ripple.png'",
+        "'img/healingStone'+<_0x23b649>+'.png'",
+        "'img/honeycomb'+(_e|)+'.png'",
+        "'img/kelp'+(_e|)+'.png'",
+        "'img/lillypad'+(_e|)+'.png'",
+        "'img/meat'+(_e|)+'.png'",
+        "'img/pear'+(_e|)+'.png'",
+        "'img/pumpkin/'+<this['pumpkinType']>+'/'+<this['frameNumber']>+'.png'",
+        "'img/rasp'+(_e|)+'.png'",
+        "'img/riverCurrent'+<this['riverSpecT']>+'.png'",
+        "'img/seaweed'+(_e|)+'.png'",
+        "'img/starfish'+(_e|)+'.png'",
+        "'img/target'+<_0x44dbd1>+'.png'",
+        "'img/target'+<_0x8a9742>+'.png'",
+        "'img/umbrella/'+<this['umbrellaType']>+'/'+<this['umbrellaColor']>+'/umbrella'+(-closed|)+'.png'",
+        "'img/upgradeshell/'+<_0x98514e>+'.png'",
+        "'img/upgradeshell/outline'+<this['curBiome']>+'.png'",
+        "'img/upgradeshell/shellpart'+<this['speciesSubType']>+'.png'",
+        "'img/viralpandemic/'+<_0x15c96b>+'_e.png'",
+        "'img/watermelon'+(_e|)+'.png'",
+        "'img/watermelonSlice'+(_e|)+'.png'",
+        "'img/web/'+<this['eff_webStuckType']>+'/spiderWeb_stuck.png'",
+        "'img/web/'+<this['webType']>+'/spiderWeb.png'",
+        "'img/xmasgifts/'+<this['giftColor']>+'/gift_e.png'",
+        "'land/bear/'+<this['speciesType']>+'/'+<this['speciesSubType']>+'/ability.png'",
+        "'props/'+<this['animalType']>+'/'+<_0x525505>+'/'+<_0x4d698c>+'.png'",
+        "'shop/'+(gem|mopecoin)+'.png'",
+        "'shop/deals/'+<this['itemId']['toLowerCase'](>+'.png'",
+        "'shop/feature/'+<this['itemId']['toLowerCase'](>+'.png'",
+        "'skins/'+<_0x1783a3>+'.png'",
+        "'skins/'+<_0x2512db['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x33a720>+'.png'",
+        "'skins/'+<_0x35a6b1>+'/bear/'+<this['speciesType']>+'/ability.png'",
+        "'skins/'+<_0x38607a>+'.png'",
+        "'skins/'+<_0x3aeb5e>+'_head.png'",
+        "'skins/'+<_0x3aeb5e>+'_head1.png'",
+        "'skins/'+<_0x3aeb5e>+'_head2.png'",
+        "'skins/'+<_0x3aeb5e>+'_wing1.png'",
+        "'skins/'+<_0x3aeb5e>+'_wing2.png'",
+        "'skins/'+<_0x3cdcd8['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x3fffbd>+'ostrich/ostrich-baby.png'",
+        "'skins/'+<_0x3fffbd>+<_0x2512db['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x3fffbd>+<_0x54c846(_0x5badc6)['skinName>+'.png'",
+        "'skins/'+<_0x3fffbd>+<_0x54c846(_0x5badc6)['skinName>+'2.png'",
+        "'skins/'+<_0x3fffbd>+<_0x5da2d1['skinName']>+'.png'",
+        "'skins/'+<_0x4a6364['skinName']>+'.png'",
+        "'skins/'+<_0x54c846(_0x5badc6)['skinName>+'.png'",
+        "'skins/'+<this['getSkin']()>+'/'+<_0x40cdc4>+'_legs.png'",
+        "'skins/'+<this['getSkin']()>+'/bison_head'+<this['specType']>+'.png'",
+        "'skins/'+<this['getSkin']()>+'/body_front.png'",
+        "'skins/'+<this['getSkin']()>+<this['frameNumber']>+'.png'",
+        "'skins/'+<this['getSkinName']()>+'-crown.png'",
+        "'skins/'+<this['getSkinName']()>+'.png'",
+        "'skins/'+<this['getSkinName']()>+'_shine.png'",
+        "'skins/'+<this['getSkinName2']()>+'_head'+<_0x4b435b>+'.png'",
+        "'skins/'+<this['getSkinName2']()>+'_wing'+<_0x21e4f4>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/camel_head1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/ears'+<_0x5964e2>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/gazelle1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/gobibear_head1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/hyena2.png'",
+        "'skins/'+<this['getSkinPath']()>+'/hyena_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_ability.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_attack.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_neck.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_tail.png'",
+        "'skins/'+<this['getSkinPath']()>+'/leg'+<_0x355447>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/legs0.png'",
+        "'skins/'+<this['getSkinPath']()>+'/legs1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/licked_face.png'",
+        "'skins/'+<this['getSkinPath']()>+'/meerkat1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattle.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattlesnake.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattlesnake_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tail.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tongue'+<_0x98b202>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tongue.png'",
+        "'skins/'+<this['getSkinPath']()>+'/vulture.png'",
+        "'skins/'+<this['getSkinPath']()>+'/warthog.png'",
+        "'skins/'+<this['getSpeciesPath']('boacon>+'/tongue.png'",
+        "'skins/'+<this['getSpeciesPath']('kraken>+'/kraken.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/back_legs.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/front_legs.png'",
+        "'skins/'+<this['getSpeciesPath']('peacoc>+'/peacock_ability.png'",
+        "'skins/'+<this['getSpeciesPath']('peacoc>+'/peacock_top.png'",
+        "'skins/'+<this['getSpeciesPath']('toucan>+'/toucan_beak.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/'+<_0x40cbe2>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/ability_whaleTailHit.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/cape.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/constrict.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/crab2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/croc.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/deer.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey_head'+<_0x2ebcfb>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey_head'+<this['specType']>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/elephant.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/giraffe.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/gorilla.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/head.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/hedgehog2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/hippo1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/jellyfish.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/kakapo_head.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/killerwhale.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/leftwing.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/legs.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/lion_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/lion_roar.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/nose.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/pig.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/pufferfish2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rabbit.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/raven_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rhino_charge.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rhino_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rightwing.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/slash.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/snowyowl.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tail.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tail2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tongue.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/turtle2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+<this['getSubSpecies']()>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']()>+<this['getSubSpecies']()>+'/kakapo.png'",
+        "'skins/'+<this['skinFolder']()>+'/pterodactyl/'+<this['animalSpecies']>+'/'+<_0xf04f01>+'.png'",
+        "'skins/'+<this['skinFolder']()>+'/pterodactyl/'+<this['animalSpecies']>+'/pterodactyl'+'_ability.png'",
+        "'skins/arctic/bear/'+<this['animalSpecies']>+'/clawslash.png'",
+        "'skins/arctic/icemonster/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/arctic/icemonster/'+<this['animalSpecies']>+'/crystal.png'",
+        "'skins/arctic/icemonster/'+<this['speciesType']>+'/crystalfire.png'",
+        "'skins/arctic/icemonster/201/icemonster'+<_0xdf8660>+'.png'",
+        "'skins/arctic/muskox/'+<this['animalSpecies']>+'/muskox2.png'",
+        "'skins/arctic/penguin/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/penguin1.png'",
+        "'skins/arctic/reindeer/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/reindeer.png'",
+        "'skins/arctic/sabertooth/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/sabertooth.png'",
+        "'skins/arctic/seal/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/seal1.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/'+<_0x46e906>+'_head1.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/carrot_nose.png'",
+        "'skins/arctic/walrus/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/walrus1.png'",
+        "'skins/arctic/wolf/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/wolf1.png'",
+        "'skins/arctic/wolverine/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/wolverine1.png'",
+        "'skins/arctic/yeti/'+<this['animalSpecies']>+'/yeti_head1.png'",
+        "'skins/arctic/yeti/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/ability.png'",
+        "'skins/deathworm/segment_'+<_0x27373f>+'.png'",
+        "'skins/desert/armadillo/'+<_0x2512db['animalSpecies']>+'/armadillo1.png'",
+        "'skins/desert/bison/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/bison_ability.png'",
+        "'skins/desert/blackwidow/'+<this['animalSpecies']>+'/'+<this['animalSubSpecies']>+'/blackwidow.png'",
+        "'skins/desert/bulletant/'+<this['animalSpecies']>+'/abdomen.png'",
+        "'skins/desert/bulletant/'+<this['animalSpecies']>+'/head.png'",
+        "'skins/desert/camel/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/spit.png'",
+        "'skins/desert/camel/'+<this['speciesType']>+'/spit'+<this['specType']>+'.png'",
+        "'skins/desert/camel/'+<this['speciesType']>+'/spit.png'",
+        "'skins/desert/camel/201/spit'+<this['specType']>+'_pop'+<_0x769f8d>+'.png'",
+        "'skins/desert/camel/201/spit'+<this['specType']>+'_pop4.png'",
+        "'skins/desert/chipmunk/'+<_0x2512db['animalSpecies']>+'/chipmunk1.png'",
+        "'skins/desert/fennecfox/'+<_0x2512db['animalSpecies']>+'/fennecfox1.png'",
+        "'skins/desert/gobibear/'+<_0x2512db['animalSpecies']>+'/gobibear_attack.png'",
+        "'skins/desert/hyena/'+<this['speciesType']>+'/laugh.png'",
+        "'skins/desert/meerkat/'+<_0x2512db['animalSpecies']>+'/meerkat1.png'",
+        "'skins/desert/pterodactyl/100/mouth/pterodactyl_head'+<_0x3c8ffb>+'.png'",
+        "'skins/desert/rattlesnake/'+<this['speciesType']>+'/circle.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_stinger_dull.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_stinger_full.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_tail.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/normal_stinger_dull.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/normal_stinger_full.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/scorpion1.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/scorpion_ability.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/stinger_normal.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/stinger_tail.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/tail_back.png'",
+        "'skins/desert/scorpion/'+<this['forObj']['animalSpecies'>+'/arms-grabbed.png'",
+        "'skins/desert/scorpion/'+<this['forObj']['animalSpecies'>+'/arms.png'",
+        "'skins/duck/'+<_0x292798>+'/duck_head.png'",
+        "'skins/duck/'+<_0x292798>+'/duck_wing1.png'",
+        "'skins/duck/'+<_0x292798>+'/duck_wing2.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/ability_fly.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/turkeyegg.png'",
+        "'skins/forest/turkey/'+<this['speciesType']>+'/turkeyegg'+(_e|)+'.png'",
+        "'skins/honeybee/0/'+<this['animalSubSpecies']>+'/honeybee_wing1.png'",
+        "'skins/honeybee/0/'+<this['animalSubSpecies']>+'/honeybee_wing2.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/'+<_0x53a0bf>+'.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm1.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm2-fire.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm2.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm21.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/mouth'+<this['oogaBoogaFrame']>+'.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/arm2.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/firewood.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/spear.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/spear2.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/'+<_0x3cbd0a>+'.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/electric-charge.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/tornado.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/wind.png'",
+        "'skins/land/birdmonster/0/stun/'+<_0x5906d9>+'.png'",
+        "'skins/land/cassowary/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/cassowary2.png'",
+        "'skins/land/chicken/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/land/cobra/'+<this['animalSpecies']>+'/cobra2.png'",
+        "'skins/land/croc/'+<this['speciesType']>+'/'+<this['speciesSubType']>+'/ability.png'",
+        "'skins/land/dinomonster/'+<this['animalSpecies']>+'/dinomonster.png'",
+        "'skins/land/eagle/'+<this['animalSpecies']>+'/eagle.png'",
+        "'skins/land/falcon/'+<this['animalSpecies']>+'/falcon_ability.png'",
+        "'skins/land/ostrich/'+<this['animalSpecies']>+'/ostrich-baby.png'",
+        "'skins/land/ostrich/'+<this['speciesType']>+'/ostrichEgg'+(_e|)+'.png'",
+        "'skins/land/ostrich/'+<this['speciesType']>+'/ostrichEgg'+(edible|)+'.png'",
+        "'skins/land/peacock/'+<this['animalSpecies']>+'/'+<_0x1bb7f7>+'.png'",
+        "'skins/land/tiger/'+<this['speciesType']>+'/ability_tigerSlash'+<this['specType']>+'.png'",
+        "'skins/land/trex/'+<this['speciesType']>+'/ability_trexBite.png'",
+        "'skins/land/trex/'+<this['speciesType']>+'/trex-head.png'",
+        "'skins/land/zebra/'+<this['speciesType']>+'/kick'+<_0xbdb533>+'.png'",
+        "'skins/ocean/flamingo/'+<_0x2512db['animalSpecies']>+'/flamingo.png'",
+        "'skins/ocean/kingcrab/'+<this['animalSpecies']>+'/ability_crabSmashSkin.png'",
+        "'skins/ocean/seamonster/'+<this['animalSpecies']>+'/seamonster.png'",
+        "'skins/ocean/shark/'+<this['speciesType']>+'/ability.png'",
+        "'skins/pelican/'+<_0x2512db['animalSpecies']>+'/ability_pelican.png'",
+        "'skins/pelican/'+<this['speciesType']>+'/ability_pelican'+<_0x9f26ba>+'.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_flying.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_flyingsleigh.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_throwgifts.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/bellhand.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/hat.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/santa_head'+<_0x24ae95>+'.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/santa_mouth'+<_0x2bf559>+'.png'",
+        "'skins/volcano/blackdragon/'+<this['animalSpecies']>+'/wings.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone1.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone2.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone3.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing1.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing_tips.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/nostrils.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing2.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing_tips.png'",
+        "'skins/volcano/kingdragon/'+<this['speciesType']>+'/tail.png'",
+        "'skins/volcano/landmonster/'+<this['animalSpecies']>+'/'+<this['animalSubSpecies']>+'/landmonster.png'",
+        "'skins/volcano/landmonster/'+<this['animalSpecies']>+'/landmonster.png'",
+        "'skins/volcano/phoenix/'+<_0x2657c8>+'/firetornado.png'",
+        "'skins/volcano/phoenix/'+<_0x57334b>+'/firetornado.png'",
+        "'skins/volcano/phoenix/'+<_0x9e0295>+'/'+<_0x31b5d5>+'.png'",
+        "'tailwind/'+<_0x548b9e>+'.png'"
+      ]
+    },
+    {
+      "client": "client.js@20251210042757.js",
+      "capture": "20251210042757",
+      "skin_names": 93,
+      "templates": 406,
+      "asset_names": 238,
+      "path_patterns": [
+        "'./assets/s/2/gameobj/78/stone'+<_0x152e11>+'.png'",
+        "'/'+<_0x90e65>+'_wing1.png'",
+        "'/'+<_0x90e65>+'_wing2.png'",
+        "'/assets/s/'+<_0x29f1de>+'/img/disasters/'+<_0xfa5361(_0x434d36['specType'>+'.png'",
+        "'/assets/s/'+<_0x29f1de>+'/img/pumpkin/'+<_0xcb80ef['specType']>+'/0.png'",
+        "'/pigeon_wing'+<_0x2c28ef>+'.png'",
+        "'/props/'+<_0x2bd89b>+'/beards/'+<this['props']['beardsColor']>+'.png'",
+        "'/props/'+<_0x2bd89b>+'/glasses/'+<this['props']['glassesColor']>+'.png'",
+        "'/props/'+<_0x2bd89b>+'/hats/'+<this['props']['hatsColor']>+'.png'",
+        "'/props/'+<_0x2bd89b>+'/scarfs/'+<this['props']['scarfsColor']>+'.png'",
+        "'/snowyowl_wing'+<_0x41081e>+'.png'",
+        "'arctic/bear/'+<this['aniSpecies']>+'/slash.png'",
+        "'arctic/snowleopard/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/snowleopard.png'",
+        "'assets/powerups/powerup-'+<_0x28b13a['name']>+'.png'",
+        "'charge/'+<_0x118280>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x159d97>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x195ec6>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x1d18c2>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x201bee>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x290f21>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x2e7339>+'_'+<this['hasPopped']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x305560>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x3283a9>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x337761>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x43de4f>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x446ada>+'.jpg'",
+        "'gameobj/'+<this['oType']>+'/'+<_0x4b5960>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['biomeType']>+'/'+<this['frameNumber']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['carcassType']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['chilliType']>+'/'+<_0xa0e0e3>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['curBiome']>+'/cave_bottom.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['curBiome']>+'/cave_top.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'_'+<this['frame']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+'_'+<this['speciesType']>+(_e|)+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['oType']>+(_e|)+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['specType']>+'/'+<_0x22e2cf>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/'+<_0x2e13fe>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/'+<_0x8063cc>+'.png'",
+        "'gameobj/'+<this['oType']>+'/'+<this['speciesType']>+'/0.png'",
+        "'gameobj/'+<this['oType']>+'/0.png'",
+        "'gameobj/'+<this['oType']>+'/incentive/'+<this['stoneIncentive']>+'.png'",
+        "'gameobj/'+<this['oType']>+'/meteorite.png'",
+        "'gameobj/'+<this['oType']>+'/snow-flake.png'",
+        "'gameobj/'+<this['oType']>+'/stone'+<_0x14b730>+'.png'",
+        "'gameobj/'+<this['oType']>+'/stone_undefended.png'",
+        "'gameobj/'+<this['oType']>+<this['getObjSpecies']()>+'/'+<_0x3e75b8>+'.png'",
+        "'gameobj/101/'+<_0x2e9442>+'/'+<_0x2ea1d2>+'_'+<this['eventType']>+'.png'",
+        "'gameobj/101/'+<_0x2f06c7>+'/xmas/'+<_0x55e4c3>+'.png'",
+        "'gameobj/101/'+<_0x2f2162>+'/'+<this['getTrunk']()>+'.png'",
+        "'gameobj/101/'+<_0x5a4103>+'/'+<_0x55569f>+'_'+<this['eventType']>+'.png'",
+        "'gameobj/101/'+<_0xe97a5c>+'/'+<_0x4f7fd3>+'.png'",
+        "'gameobj/40/current'+<this['getDirectionName']()>+'.png'",
+        "'gameobj/70/0/'+<_0x182127>+'.png'",
+        "'gameobj/70/0/'+<_0x2456f5>+'.png'",
+        "'img/'+<_0x15df92>+(_e|)+'.png'",
+        "'img/'+<_0x3fbb2f>+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/base.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/'+<_0x36fd7b>+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/'+<_0x49093c>+'.png'",
+        "'img/'+<this['getSkinFolder']()>+'/mouth/stem.png'",
+        "'img/arcticNut'+(_e|)+'.png'",
+        "'img/arcticano/'+<_0x4f3a61>+'.png'",
+        "'img/banana'+(_e|)+'.png'",
+        "'img/beachball/'+<this['pumpkinType']>+'/'+<this['frameNumber']>+'.png'",
+        "'img/beehive'+(_e|)+'.png'",
+        "'img/carrot'+(_e|)+'.png'",
+        "'img/clam'+(_e|)+'.png'",
+        "'img/cloudberry'+(_e|)+'.png'",
+        "'img/coconut'+(_e|)+'.png'",
+        "'img/coin/coin'+(_e|)+'.png'",
+        "'img/conch'+(_e|)+'.png'",
+        "'img/desert/'+<_0x548e7a>+'/mouth/'+<_0x8cb8fd>+'.png'",
+        "'img/dirt/'+<this['eff_dirtType']>+'/0.png'",
+        "'img/dirt/'+<this['eff_dirtType']>+'/1.png'",
+        "'img/disasters/'+<this['tornadoFace']>+'.png'",
+        "'img/disasters/'+<this['tornadoType']>+'.png'",
+        "'img/fire/'+<_0x2a052e>+'/0.png'",
+        "'img/fire/'+<_0x5b9af2>+'/0.png'",
+        "'img/floaters/'+<this['floaterType']>+'.png'",
+        "'img/floaters/'+<this['floaterType']>+'_ripple.png'",
+        "'img/healingStone'+<_0x7b8209>+'.png'",
+        "'img/honeycomb'+(_e|)+'.png'",
+        "'img/kelp'+(_e|)+'.png'",
+        "'img/lillypad'+(_e|)+'.png'",
+        "'img/meat'+(_e|)+'.png'",
+        "'img/pear'+(_e|)+'.png'",
+        "'img/pumpkin/'+<this['pumpkinType']>+'/'+<this['frameNumber']>+'.png'",
+        "'img/rasp'+(_e|)+'.png'",
+        "'img/riverCurrent'+<this['riverSpecT']>+'.png'",
+        "'img/seaweed'+(_e|)+'.png'",
+        "'img/starfish'+(_e|)+'.png'",
+        "'img/target'+<_0x3477ac>+'.png'",
+        "'img/target'+<_0xd1c28f>+'.png'",
+        "'img/umbrella/'+<this['umbrellaType']>+'/'+<this['umbrellaColor']>+'/umbrella'+(-closed|)+'.png'",
+        "'img/upgradeshell/'+<_0x5827ef>+'.png'",
+        "'img/upgradeshell/outline'+<this['curBiome']>+'.png'",
+        "'img/upgradeshell/shellpart'+<this['speciesSubType']>+'.png'",
+        "'img/viralpandemic/'+<_0x24ed5d>+'_e.png'",
+        "'img/watermelon'+(_e|)+'.png'",
+        "'img/watermelonSlice'+(_e|)+'.png'",
+        "'img/web/'+<this['eff_webStuckType']>+'/spiderWeb_stuck.png'",
+        "'img/web/'+<this['webType']>+'/spiderWeb.png'",
+        "'img/xmasgifts/'+<this['giftColor']>+'/gift_e.png'",
+        "'land/bear/'+<this['speciesType']>+'/'+<this['speciesSubType']>+'/ability.png'",
+        "'props/'+<this['animalType']>+'/'+<_0xaa119f>+'/'+<_0x56cd67>+'.png'",
+        "'shop/'+(gem|mopecoin)+'.png'",
+        "'shop/deals/'+<this['itemId']['toLowerCase'](>+'.png'",
+        "'shop/feature/'+<this['itemId']['toLowerCase'](>+'.png'",
+        "'skins/'+<_0x212882['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x2d84df>+'_head.png'",
+        "'skins/'+<_0x2d84df>+'_head1.png'",
+        "'skins/'+<_0x2d84df>+'_head2.png'",
+        "'skins/'+<_0x2d84df>+'_wing1.png'",
+        "'skins/'+<_0x2d84df>+'_wing2.png'",
+        "'skins/'+<_0x373b4f(_0x53a9dd)['skinName>+'.png'",
+        "'skins/'+<_0x471fc7>+'/bear/'+<this['speciesType']>+'/ability.png'",
+        "'skins/'+<_0x4e15da>+'.png'",
+        "'skins/'+<_0x513c78>+'ostrich/ostrich-baby.png'",
+        "'skins/'+<_0x513c78>+<_0x212882['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x513c78>+<_0x373b4f(_0x53a9dd)['skinName>+'.png'",
+        "'skins/'+<_0x513c78>+<_0x373b4f(_0x53a9dd)['skinName>+'2.png'",
+        "'skins/'+<_0x513c78>+<_0x4c6693['skinName']>+'.png'",
+        "'skins/'+<_0x553a8b['skinName']>+'.png'",
+        "'skins/'+<_0x5691be>+'.png'",
+        "'skins/'+<_0x5c7c72['animalInfo']()['ski>+'.png'",
+        "'skins/'+<_0x658428>+'.png'",
+        "'skins/'+<this['getSkin']()>+'/'+<_0x117d5e>+'_legs.png'",
+        "'skins/'+<this['getSkin']()>+'/bison_head'+<this['specType']>+'.png'",
+        "'skins/'+<this['getSkin']()>+'/body_front.png'",
+        "'skins/'+<this['getSkin']()>+<this['frameNumber']>+'.png'",
+        "'skins/'+<this['getSkinName']()>+'-crown.png'",
+        "'skins/'+<this['getSkinName']()>+'.png'",
+        "'skins/'+<this['getSkinName']()>+'_shine.png'",
+        "'skins/'+<this['getSkinName2']()>+'_head'+<_0x1e64c0>+'.png'",
+        "'skins/'+<this['getSkinName2']()>+'_wing'+<_0x17787a>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/camel_head1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/ears'+<_0x598759>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/gazelle1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/gobibear_head1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/hyena2.png'",
+        "'skins/'+<this['getSkinPath']()>+'/hyena_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_ability.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_attack.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_neck.png'",
+        "'skins/'+<this['getSkinPath']()>+'/komododragon_tail.png'",
+        "'skins/'+<this['getSkinPath']()>+'/leg'+<_0x335b70>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/legs0.png'",
+        "'skins/'+<this['getSkinPath']()>+'/legs1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/licked_face.png'",
+        "'skins/'+<this['getSkinPath']()>+'/meerkat1.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattle.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattlesnake.png'",
+        "'skins/'+<this['getSkinPath']()>+'/rattlesnake_head.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tail.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tongue'+<_0x422f28>+'.png'",
+        "'skins/'+<this['getSkinPath']()>+'/tongue.png'",
+        "'skins/'+<this['getSkinPath']()>+'/vulture.png'",
+        "'skins/'+<this['getSkinPath']()>+'/warthog.png'",
+        "'skins/'+<this['getSpeciesPath']('boacon>+'/tongue.png'",
+        "'skins/'+<this['getSpeciesPath']('kraken>+'/kraken.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/back_legs.png'",
+        "'skins/'+<this['getSpeciesPath']('markho>+'/front_legs.png'",
+        "'skins/'+<this['getSpeciesPath']('peacoc>+'/peacock_ability.png'",
+        "'skins/'+<this['getSpeciesPath']('peacoc>+'/peacock_top.png'",
+        "'skins/'+<this['getSpeciesPath']('toucan>+'/toucan_beak.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/'+<_0x15e58a>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/ability_whaleTailHit.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/cape.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/constrict.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/crab2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/croc.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/deer.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey_head'+<_0x96211e>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/donkey_head'+<this['specType']>+'.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/elephant.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/giraffe.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/gorilla.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/head.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/hedgehog2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/hippo1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/jellyfish.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/kakapo_head.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/killerwhale.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/leftwing.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/legs.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/lion_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/lion_roar.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/nose.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/pig.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/pufferfish2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rabbit.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/raven_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rhino_charge.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rhino_head1.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/rightwing.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/slash.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/snowyowl.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tail.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tail2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/tongue.png'",
+        "'skins/'+<this['getSpeciesPath']()>+'/turtle2.png'",
+        "'skins/'+<this['getSpeciesPath']()>+<this['getSubSpecies']()>+'/ability.png'",
+        "'skins/'+<this['getSpeciesPath']()>+<this['getSubSpecies']()>+'/kakapo.png'",
+        "'skins/'+<this['skinFolder']()>+'/pterodactyl/'+<this['animalSpecies']>+'/'+<_0x2043f4>+'.png'",
+        "'skins/'+<this['skinFolder']()>+'/pterodactyl/'+<this['animalSpecies']>+'/pterodactyl'+'_ability.png'",
+        "'skins/arctic/bear/'+<this['animalSpecies']>+'/clawslash.png'",
+        "'skins/arctic/icemonster/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/arctic/icemonster/'+<this['animalSpecies']>+'/crystal.png'",
+        "'skins/arctic/icemonster/'+<this['speciesType']>+'/crystalfire.png'",
+        "'skins/arctic/icemonster/201/icemonster'+<_0x497726>+'.png'",
+        "'skins/arctic/muskox/'+<this['animalSpecies']>+'/muskox2.png'",
+        "'skins/arctic/penguin/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/penguin1.png'",
+        "'skins/arctic/reindeer/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/reindeer.png'",
+        "'skins/arctic/sabertooth/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/sabertooth.png'",
+        "'skins/arctic/seal/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/seal1.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/'+<_0x329392>+'_head1.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/arctic/snowman/'+<this['animalSpecies']>+'/carrot_nose.png'",
+        "'skins/arctic/walrus/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/walrus1.png'",
+        "'skins/arctic/wolf/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/wolf1.png'",
+        "'skins/arctic/wolverine/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/wolverine1.png'",
+        "'skins/arctic/yeti/'+<this['animalSpecies']>+'/yeti_head1.png'",
+        "'skins/arctic/yeti/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/ability.png'",
+        "'skins/deathworm/segment_'+<_0x35a30f>+'.png'",
+        "'skins/desert/armadillo/'+<_0x212882['animalSpecies']>+'/armadillo1.png'",
+        "'skins/desert/bison/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/bison_ability.png'",
+        "'skins/desert/blackwidow/'+<this['animalSpecies']>+'/'+<this['animalSubSpecies']>+'/blackwidow.png'",
+        "'skins/desert/bulletant/'+<this['animalSpecies']>+'/abdomen.png'",
+        "'skins/desert/bulletant/'+<this['animalSpecies']>+'/head.png'",
+        "'skins/desert/camel/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/spit.png'",
+        "'skins/desert/camel/'+<this['speciesType']>+'/spit'+<this['specType']>+'.png'",
+        "'skins/desert/camel/'+<this['speciesType']>+'/spit.png'",
+        "'skins/desert/camel/201/spit'+<this['specType']>+'_pop'+<_0x511287>+'.png'",
+        "'skins/desert/camel/201/spit'+<this['specType']>+'_pop4.png'",
+        "'skins/desert/chipmunk/'+<_0x212882['animalSpecies']>+'/chipmunk1.png'",
+        "'skins/desert/fennecfox/'+<_0x212882['animalSpecies']>+'/fennecfox1.png'",
+        "'skins/desert/gobibear/'+<_0x212882['animalSpecies']>+'/gobibear_attack.png'",
+        "'skins/desert/hyena/'+<this['speciesType']>+'/laugh.png'",
+        "'skins/desert/meerkat/'+<_0x212882['animalSpecies']>+'/meerkat1.png'",
+        "'skins/desert/pterodactyl/100/mouth/pterodactyl_head'+<_0x2b57a3>+'.png'",
+        "'skins/desert/rattlesnake/'+<this['speciesType']>+'/circle.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_stinger_dull.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_stinger_full.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/attack_tail.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/normal_stinger_dull.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/normal_stinger_full.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/scorpion1.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/scorpion_ability.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/stinger_normal.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/stinger_tail.png'",
+        "'skins/desert/scorpion/'+<this['animalSpecies']>+'/tail_back.png'",
+        "'skins/desert/scorpion/'+<this['forObj']['animalSpecies'>+'/arms-grabbed.png'",
+        "'skins/desert/scorpion/'+<this['forObj']['animalSpecies'>+'/arms.png'",
+        "'skins/duck/'+<_0xea4c04>+'/duck_head.png'",
+        "'skins/duck/'+<_0xea4c04>+'/duck_wing1.png'",
+        "'skins/duck/'+<_0xea4c04>+'/duck_wing2.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/ability_fly.png'",
+        "'skins/forest/turkey/'+<this['animalSpecies']>+'/turkeyegg.png'",
+        "'skins/forest/turkey/'+<this['speciesType']>+'/turkeyegg'+(_e|)+'.png'",
+        "'skins/honeybee/0/'+<this['animalSubSpecies']>+'/honeybee_wing1.png'",
+        "'skins/honeybee/0/'+<this['animalSubSpecies']>+'/honeybee_wing2.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/'+<_0x3808b3>+'.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm1.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm2-fire.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm2.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/arm21.png'",
+        "'skins/land/bigfoot/'+<this['animalSpecies']>+'/mouth'+<this['oogaBoogaFrame']>+'.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/arm2.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/firewood.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/spear.png'",
+        "'skins/land/bigfoot/'+<this['speciesType']>+'/spear2.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/'+<_0x47767e>+'.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/electric-charge.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/tornado.png'",
+        "'skins/land/birdmonster/'+<this['speciesType']>+'/wind.png'",
+        "'skins/land/birdmonster/0/stun/'+<_0x180b6d>+'.png'",
+        "'skins/land/cassowary/'+<this['animalSpecies']>+<this['getSubSpecies']()>+'/cassowary2.png'",
+        "'skins/land/chicken/'+<this['animalSpecies']>+'/ability.png'",
+        "'skins/land/cobra/'+<this['animalSpecies']>+'/cobra2.png'",
+        "'skins/land/croc/'+<this['speciesType']>+'/'+<this['speciesSubType']>+'/ability.png'",
+        "'skins/land/dinomonster/'+<this['animalSpecies']>+'/dinomonster.png'",
+        "'skins/land/eagle/'+<this['animalSpecies']>+'/eagle.png'",
+        "'skins/land/falcon/'+<this['animalSpecies']>+'/falcon_ability.png'",
+        "'skins/land/ostrich/'+<this['animalSpecies']>+'/ostrich-baby.png'",
+        "'skins/land/ostrich/'+<this['speciesType']>+'/ostrichEgg'+(_e|)+'.png'",
+        "'skins/land/ostrich/'+<this['speciesType']>+'/ostrichEgg'+(edible|)+'.png'",
+        "'skins/land/peacock/'+<this['animalSpecies']>+'/'+<_0x46d086>+'.png'",
+        "'skins/land/tiger/'+<this['speciesType']>+'/ability_tigerSlash'+<this['specType']>+'.png'",
+        "'skins/land/trex/'+<this['speciesType']>+'/ability_trexBite.png'",
+        "'skins/land/trex/'+<this['speciesType']>+'/trex-head.png'",
+        "'skins/land/zebra/'+<this['speciesType']>+'/kick'+<_0x291baa>+'.png'",
+        "'skins/ocean/flamingo/'+<_0x212882['animalSpecies']>+'/flamingo.png'",
+        "'skins/ocean/kingcrab/'+<this['animalSpecies']>+'/ability_crabSmashSkin.png'",
+        "'skins/ocean/seamonster/'+<this['animalSpecies']>+'/seamonster.png'",
+        "'skins/ocean/shark/'+<this['speciesType']>+'/ability.png'",
+        "'skins/pelican/'+<_0x212882['animalSpecies']>+'/ability_pelican.png'",
+        "'skins/pelican/'+<this['speciesType']>+'/ability_pelican'+<_0x25ce1a>+'.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_flying.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_flyingsleigh.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/ability_santa_throwgifts.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/bellhand.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/hat.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/santa_head'+<_0x382d7d>+'.png'",
+        "'skins/santa/'+<this['animalSpecies']>+'/santa_mouth'+<_0x48d1ec>+'.png'",
+        "'skins/volcano/blackdragon/'+<this['animalSpecies']>+'/wings.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone1.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone2.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/bone3.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing1.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/left_wing_tips.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/nostrils.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing2.png'",
+        "'skins/volcano/kingdragon/'+<this['animalSpecies']>+'/right_wing_tips.png'",
+        "'skins/volcano/kingdragon/'+<this['speciesType']>+'/tail.png'",
+        "'skins/volcano/landmonster/'+<this['animalSpecies']>+'/'+<this['animalSubSpecies']>+'/landmonster.png'",
+        "'skins/volcano/landmonster/'+<this['animalSpecies']>+'/landmonster.png'",
+        "'skins/volcano/phoenix/'+<_0x101592>+'/firetornado.png'",
+        "'skins/volcano/phoenix/'+<_0x10c347>+'/'+<_0x1939da>+'.png'",
+        "'skins/volcano/phoenix/'+<_0x15b9a9>+'/firetornado.png'",
+        "'tailwind/'+<_0x40afb3>+'.png'"
+      ]
+    },
+    {
+      "client": "ui_bundle.js@20210604001312.js",
+      "capture": "20210604001312",
+      "skin_names": 0,
+      "templates": 0,
+      "asset_names": 18,
+      "path_patterns": []
+    },
+    {
+      "client": "ui_bundle.js@20210612030300.js",
+      "capture": "20210612030300",
+      "skin_names": 0,
+      "templates": 0,
+      "asset_names": 18,
+      "path_patterns": []
+    }
+  ],
+  "names": 340,
+  "archived_by_arquivo_pt": 9,
+  "never_archived": 331,
+  "assets": [
+    {
+      "name": "mope.io/assets/abilities/Dash-Boost.svg",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/1/gameobj/106/snow-flake.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/10.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/11.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/12.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/13.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/2.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/3.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/4.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/5.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/6.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/7.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/8.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/9.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/bite.mp3",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/bloop.mp3",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/click.mp3",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/music_game.mp3",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/music_menu.mp3",
+      "clients": [
+        "client.js@20170213101214.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/nom.mp3",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/audio/tap.mp3",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/gameobj/18/0/0.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/gameobj/40/currentRight.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/gameobj/70/0.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_backkick.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_boaBite.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_claw.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_crabSmashSkin.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_crocBite.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_dive.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_diveMud.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_dive_lava.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_elephantTrunkSmack.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_giraffeStompLeg.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_pounce1.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_pounce2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_sabertoothJawAttack.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_sharkBite.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_tigerJump.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_trexBite.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_whaleTailHit.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/ability_zebraKick.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/arcticNut.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/arcticNut_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/banana.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/banana_e.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/beehive.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/beehive_e.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/blackdragon_wing1.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/blackdragon_wing2.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/camera.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/carrot.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/carrot_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/clam.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/clam_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/cloudberry.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/cloudberry_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/coconut.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/coconut_e.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/coin/coin.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/coin/coin_e.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/conch.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/conch_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/constrict.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/custom/pad.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/custom/trampoline/leg_zebra.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/custom/trampoline/rug_zebra.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/custom/trunk1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/custom/trunk2.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/desert/anthill/anthill.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/dirt/dirt_below.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/cloud.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/cloud1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/coldwave.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/dustwave.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/heatwave.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/disasters/tsunami.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/fire.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/fire2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/firetornado.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/honeycomb.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/honeycomb_e.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/howToPlay1.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/icons/1v1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/instr_eatsymbol.png",
+      "clients": [
+        "client.js@20170213101214.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/kelp.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/kelp_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/lillypad.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/lillypad_e.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/meat.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/meat_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/pear.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/pear_e.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/quill.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/raindrop.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/rasp.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/rasp_e.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/santa/sleig.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/seaweed.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/seaweed_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/shark-head.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/snowball.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/sound_off.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/sound_on.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20170213101116",
+        "20180421014238",
+        "20200314110437",
+        "20200613164948",
+        "20201203172223",
+        "20210310091823",
+        "20250315124228",
+        "20250905144039",
+        "20251210042735"
+      ]
+    },
+    {
+      "name": "mope.io/img/spiderWeb.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/spiderWeb_stuck.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/starfish.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/starfish_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/trex-head.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/viralpandemic/mask-outline.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/viralpandemic/mask.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/viralpandemic/virus.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/watermelon.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/watermelonSlice.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/watermelonSlice_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/watermelon_e.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/wave.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/web/0/spiderWeb.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/img/whirlpool2.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/pigeon_head.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/privacy/index.html",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/VIP_Button.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/VIP_Pass.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/back.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/close.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20201203172120",
+        "20201212122605",
+        "20210310091748",
+        "20250315124206",
+        "20250905144022",
+        "20251210042716"
+      ]
+    },
+    {
+      "name": "mope.io/shop/clothing.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/coins.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/deals/deals.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/features.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/shop/gem.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20250905144046",
+        "20251210042742"
+      ]
+    },
+    {
+      "name": "mope.io/shop/mopecoin.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20191230093652",
+        "20200314110536",
+        "20200613165054",
+        "20200910235643",
+        "20201203172215",
+        "20210310091815",
+        "20250315124232",
+        "20250905144042",
+        "20251210042738"
+      ]
+    },
+    {
+      "name": "mope.io/shop/skins.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/arcticfox.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/arcticfox2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/arctichare.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/arctichare2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/bear/bear.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/chipmunk.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/chipmunk2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/icemonster/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/icemonster/0/icemonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/lemming.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/lemming2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/mammoth.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/mammoth2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/muskox.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/muskox2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/penguin.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/penguin2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/polarbear.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/polarbear2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/reindeer.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/reindeer2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/seal.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/seal2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/snowleopard.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20190601020509"
+      ]
+    },
+    {
+      "name": "mope.io/skins/arctic/snowleopard2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/snowman/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/walrus.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/walrus2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/wolf.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/wolf2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/wolverine.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/wolverine2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti/0/wolf.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti/0/yeti.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/bear.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20191230093629"
+      ]
+    },
+    {
+      "name": "mope.io/skins/bear2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/bigcat/cheetah.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/blackdragon.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/blackdragon2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/bluewhale.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/bluewhale2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/boaConstrictor.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/boaConstrictor2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/cassowary/cassowary1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/cheetah.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/cheetah2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/cobra.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/cobra2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/crab.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/crab2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/croc.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/croc2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/deer.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/deer2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/desert/bulletant/0/bulletant.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/desert/camel/spit.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/desert/gazelle/gazelle1.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/desert/pterodactyl/0/pterodactyl_ability.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/desert/scorpion/0/giantscorpion.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/dinomonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/donkey.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/donkey2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/dragon.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/dragon2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/duck.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/duck/duckling.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/duck2.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/duckling.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/duckling2.png",
+      "clients": [
+        "client.js@20180421014457.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/eagle.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/eagle2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/elephant.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/elephant2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/falcon/falcon.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/fox.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/fox2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/frog/frog.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/frog/frogLegs.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/giantSpider.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/giantSpider2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/giraffe.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20180421014423"
+      ]
+    },
+    {
+      "name": "mope.io/skins/giraffe2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/gorilla.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/gorilla2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/hedgehog.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/hedgehog2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/hippo.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/hippo2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/icemonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/jellyfish.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/jellyfish2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/killerwhale.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/killerwhale2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/kingcrab.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/kingcrab2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/kraken.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/kraken2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/chandyo/chandyo_back.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/chandyo/chandyo_head.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/left_wing.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/right_wing.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/sultan_head.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/tail.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/bigfoot/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/birdmonster/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/birdmonster/0/birdmonster_ability.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/chicken/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/dinomonster/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/dinomonster/0/dinomonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/dragon/0/0/dragon.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/elephant/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/falcon/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/hippo/204/roar.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/mouse/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/ostrich/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/pig/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/land/trex/0/trex.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/landmonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/lion.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/lion2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/mole.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/mole2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/monsters/dinomonster/dinomonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/monsters/icemonster/icemonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/mouse.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20190327115404",
+        "20190414003453",
+        "20190601020428",
+        "20190619015633",
+        "20191230093648",
+        "20200314110533",
+        "20200613165051",
+        "20200910235639"
+      ]
+    },
+    {
+      "name": "mope.io/skins/mouse2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/kingcrab/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/kingcrab/0/kingcrab.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/kraken/0/0/kraken.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/seamonster/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/seamonster/0/seamonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/snail/snail.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ocean/snail/snail_head.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/octopus.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/octopus2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ostrich/baby-ostrich.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ostrich/ostrich-baby.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/ostrich/ostrich.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pelican/pelican.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/phoenix/phoenix.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pig.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pig2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pigeon/pigeon.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pufferfish.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/pufferfish2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/rabbit.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/rabbit2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/rhino.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/rhino2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/sabertoothtiger.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/sabertoothtiger2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/santa/.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/santa/0/sleigh.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/santa/rudolph.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/scorpion.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/seahorse.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/seahorse2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/seamonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/shark.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/shark2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/shrimp.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": [
+        "20191230093626",
+        "20200314110511",
+        "20200613165028"
+      ]
+    },
+    {
+      "name": "mope.io/skins/shrimp2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/snail.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/snail2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/snowyowl/snowyowl.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/squid.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/squid2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/stingray.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/stingray2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/swordfish.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/swordfish2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/tiger.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/tiger2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/toucan/toucan.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/trex.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/trex2.png",
+      "clients": [
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/trout.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/trout2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/turtle.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/turtle2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/volcano/blackdragon/0/blackdragon.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/volcano/landmonster/0/0/landmonster.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/volcano/phoenix/0/phoenix.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/zebra.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/skins/zebra2.png",
+      "clients": [
+        "client.js@20170213101214.js",
+        "client.js@20180421014457.js",
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/snowyowl_head.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/stomp.png",
+      "clients": [
+        "client.js@20250905144100.js",
+        "client.js@20251210042757.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/desert/komododragon/200/0/komodo.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/land/dragon/200/3/dragon.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/ocean/crab/200/crab.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/ocean/trout/200/trout.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/land/dragon/0/dragon.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/land/eagle/0/eagle.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/ocean/kraken/0/kraken.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/volcano/blackdragon/0/blackdragon.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-bioson.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-lion.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-turtle.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/interface-1.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/interface-2.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/legacy-bundle.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/new-ui.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/skin-pack-toggle.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/store.png",
+      "clients": [
+        "ui_bundle.js@20210604001312.js",
+        "ui_bundle.js@20210612030300.js"
+      ],
+      "guessed": false,
+      "archived_captures": []
+    }
+  ]
+}

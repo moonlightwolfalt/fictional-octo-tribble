@@ -1,0 +1,2593 @@
+{
+  "target_date": "20190808",
+  "source": "arquivo.pt (nearest capture per file)",
+  "window_days": 45,
+  "capture_days_used": [
+    "20170213",
+    "20180421",
+    "20190414",
+    "20190601",
+    "20190619",
+    "20190825",
+    "20191010",
+    "20191230",
+    "20200314",
+    "20200613",
+    "20200910",
+    "20201203",
+    "20210310",
+    "20210604",
+    "20220601",
+    "20220624",
+    "20250315",
+    "20250905"
+  ],
+  "files": [
+    {
+      "url": "http://mope.io/adblockdet/ads.js",
+      "capture": "20190619015630",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/adblockdet/ads.js",
+      "bytes": 21
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/turkey/0/turkey_full.png",
+      "capture": "20201203172123",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/turkey/0/turkey_full.png",
+      "bytes": 94818
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/turkey/pumpkinpie.png",
+      "capture": "20201203172134",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/turkey/pumpkinpie.png",
+      "bytes": 85179
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeybaked.png",
+      "capture": "20201203172130",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/turkey/turkeybaked.png",
+      "bytes": 92491
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeyleg.png",
+      "capture": "20201203172139",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/turkey/turkeyleg.png",
+      "bytes": 36680
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/1/giraffe.png",
+      "capture": "20201203172127",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/whitegiraffe/1/giraffe.png",
+      "bytes": 101212
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/2/giraffe_family.png",
+      "capture": "20201203172144",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/forest/whitegiraffe/2/giraffe_family.png",
+      "bytes": 124436
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/land/aiboss/gujjar.png",
+      "capture": "20210310091752",
+      "days_from_target": 580.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/land/aiboss/gujjar.png",
+      "bytes": 120380
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/land/aiboss/sultan.png",
+      "capture": "20210310091757",
+      "days_from_target": 580.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/land/aiboss/sultan.png",
+      "bytes": 87040
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/land/giraffe/3/giraffe_family.png",
+      "capture": "20201203172148",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/land/giraffe/3/giraffe_family.png",
+      "bytes": 83620
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
+      "capture": "20250315124219",
+      "days_from_target": 2046.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
+      "bytes": 48182
+    },
+    {
+      "url": "https://mope.io/assets/s/1/skins/mouse.png",
+      "capture": "20201203172211",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/assets/s/1/skins/mouse.png",
+      "bytes": 48182
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
+      "capture": "20201203172104",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
+      "bytes": 24536
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1?ray=7208a6875b6f03ae",
+      "capture": "20220624214527",
+      "days_from_target": 1051.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1",
+      "bytes": 44909
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/challenge-platform/h/g/orchestrate/managed/v1?ray=714a98794bcf03ba",
+      "capture": "20220601201058",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/challenge-platform/h/g/orchestrate/managed/v1",
+      "bytes": 42686
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/images/browser-bar.png?1376755637",
+      "capture": "20220601201058",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/images/browser-bar.png",
+      "bytes": 715
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/images/cf-no-screenshot-warn.png",
+      "capture": "20220601201101",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/images/cf-no-screenshot-warn.png",
+      "bytes": 2592
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif?ray=714a98794bcf03ba",
+      "capture": "20220601201101",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif",
+      "bytes": 42
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/images/trace/managed/js/transparent.gif?ray=714a98794bcf03ba",
+      "capture": "20220601201058",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/images/trace/managed/js/transparent.gif",
+      "bytes": 42
+    },
+    {
+      "url": "https://mope.io/cdn-cgi/styles/cf.errors.css",
+      "capture": "20220601201057",
+      "days_from_target": 1028.8,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/styles/cf.errors.css",
+      "bytes": 23691
+    },
+    {
+      "url": "http://mope.io/client.js",
+      "capture": "20180421014457",
+      "days_from_target": 473.9,
+      "reason": "game client (loaded with a cache-busting ?x=)",
+      "path": "mope.io/client.js",
+      "bytes": 123047
+    },
+    {
+      "url": "https://mope.io/dfp.js",
+      "capture": "20200910235701",
+      "days_from_target": 400.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/dfp.js",
+      "bytes": 139
+    },
+    {
+      "url": "http://mope.io/favicon.ico",
+      "capture": "20190619015655",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/favicon.ico",
+      "bytes": 15086
+    },
+    {
+      "url": "http://mope.io/img/appAd_and.png",
+      "capture": "20190619015651",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/appAd_and.png",
+      "bytes": 2547
+    },
+    {
+      "url": "http://mope.io/img/appAd_ios.png",
+      "capture": "20190619015648",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/appAd_ios.png",
+      "bytes": 3351
+    },
+    {
+      "url": "http://mope.io/img/blocked.png",
+      "capture": "20180421014410",
+      "days_from_target": 473.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/blocked.png",
+      "bytes": 14603
+    },
+    {
+      "url": "http://mope.io/img/logo.png",
+      "capture": "20190619015638",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/logo.png",
+      "bytes": 12605
+    },
+    {
+      "url": "http://mope.io/img/mode_norm.png",
+      "capture": "20170213101039",
+      "days_from_target": 905.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/mode_norm.png",
+      "bytes": 1879
+    },
+    {
+      "url": "http://mope.io/img/mode_sandbox.png",
+      "capture": "20170213101050",
+      "days_from_target": 905.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/mode_sandbox.png",
+      "bytes": 2320
+    },
+    {
+      "url": "https://mope.io/img/newconfirmmsg.png",
+      "capture": "20200910235616",
+      "days_from_target": 400.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/newconfirmmsg.png",
+      "bytes": 131072
+    },
+    {
+      "url": "https://mope.io/img/promo_areaops.png",
+      "capture": "20200910235624",
+      "days_from_target": 400.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/promo_areaops.png",
+      "bytes": 160525
+    },
+    {
+      "url": "https://mope.io/img/promo_coins.png",
+      "capture": "20200910235627",
+      "days_from_target": 400.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/promo_coins.png",
+      "bytes": 15897
+    },
+    {
+      "url": "https://mope.io/img/promo_hidhole.png",
+      "capture": "20200910235620",
+      "days_from_target": 400.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/promo_hidhole.png",
+      "bytes": 260886
+    },
+    {
+      "url": "https://mope.io/img/promo_yt.png",
+      "capture": "20200613164927",
+      "days_from_target": 310.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/promo_yt.png",
+      "bytes": 324663
+    },
+    {
+      "url": "http://mope.io/img/settings.png",
+      "capture": "20190619015641",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/settings.png",
+      "bytes": 956
+    },
+    {
+      "url": "http://mope.io/img/share_banner.jpg",
+      "capture": "20191010213555",
+      "days_from_target": 63.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/share_banner.jpg",
+      "bytes": 18608
+    },
+    {
+      "url": "https://mope.io/img/sound_on.png",
+      "capture": "20200314110437",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/sound_on.png",
+      "bytes": 1224
+    },
+    {
+      "url": "http://mope.io/img/splixpromo.png",
+      "capture": "20170213101203",
+      "days_from_target": 905.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/splixpromo.png",
+      "bytes": 10510
+    },
+    {
+      "url": "https://mope.io/img/update/promo10.png",
+      "capture": "20200314110423",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promo10.png",
+      "bytes": 15170
+    },
+    {
+      "url": "https://mope.io/img/update/promo3.png",
+      "capture": "20200314110434",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promo3.png",
+      "bytes": 310819
+    },
+    {
+      "url": "https://mope.io/img/update/promo4.png",
+      "capture": "20200314110454",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promo4.png",
+      "bytes": 79518
+    },
+    {
+      "url": "https://mope.io/img/update/promo5.png",
+      "capture": "20200314110457",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promo5.png",
+      "bytes": 83286
+    },
+    {
+      "url": "https://mope.io/img/update/promoimg.png",
+      "capture": "20200314110431",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promoimg.png",
+      "bytes": 36074
+    },
+    {
+      "url": "https://mope.io/img/update/promoimg2.png",
+      "capture": "20200314110427",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/promoimg2.png",
+      "bytes": 168068
+    },
+    {
+      "url": "https://mope.io/img/update/upd_skins.png",
+      "capture": "20191230093623",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/upd_skins.png",
+      "bytes": 63920
+    },
+    {
+      "url": "https://mope.io/img/update/volcanic-eruption.png",
+      "capture": "20191230093634",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/update/volcanic-eruption.png",
+      "bytes": 131072
+    },
+    {
+      "url": "https://mope.io/img/updates/20201126/arena-options1.png",
+      "capture": "20201203172200",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/updates/20201126/arena-options1.png",
+      "bytes": 26581
+    },
+    {
+      "url": "https://mope.io/img/updates/20201126/arena-options2.png",
+      "capture": "20201203172157",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/updates/20201126/arena-options2.png",
+      "bytes": 20099
+    },
+    {
+      "url": "https://mope.io/img/updates/20201126/ocean-islands.png",
+      "capture": "20201203172152",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/updates/20201126/ocean-islands.png",
+      "bytes": 524288
+    },
+    {
+      "url": "http://mope.io/img/x.png",
+      "capture": "20190619015645",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/img/x.png",
+      "bytes": 2200
+    },
+    {
+      "url": "http://mope.io/",
+      "capture": "20190825113653",
+      "days_from_target": 17.5,
+      "reason": "start page nearest the date",
+      "path": "mope.io/index.html",
+      "bytes": 9622
+    },
+    {
+      "url": "https://mope.io/jquery_3_3_1.js",
+      "capture": "20191230093610",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/jquery_3_3_1.js",
+      "bytes": 86923
+    },
+    {
+      "url": "http://mope.io/main.css?v=1.224",
+      "capture": "20190825113700",
+      "days_from_target": 17.5,
+      "reason": "captured within 45 days",
+      "path": "mope.io/main.css",
+      "bytes": 11108
+    },
+    {
+      "url": "https://mope.io/main_nerged.css?v=live.257",
+      "capture": "20210310091736",
+      "days_from_target": 580.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/main_nerged.css",
+      "bytes": 67696
+    },
+    {
+      "url": "http://mope.io/privacy/",
+      "capture": "20190414003436",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/privacy",
+      "bytes": 6310
+    },
+    {
+      "url": "http://mope.io/robots.txt",
+      "capture": "20190619015618",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/robots.txt",
+      "bytes": 25
+    },
+    {
+      "url": "https://mope.io/shop/close.png",
+      "capture": "20201203172120",
+      "days_from_target": 483.7,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/close.png",
+      "bytes": 3480
+    },
+    {
+      "url": "https://mope.io/shop/exp.png",
+      "capture": "20250905144119",
+      "days_from_target": 2220.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/exp.png",
+      "bytes": 31425
+    },
+    {
+      "url": "https://mope.io/shop/gem.png",
+      "capture": "20250905144046",
+      "days_from_target": 2220.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/gem.png",
+      "bytes": 25679
+    },
+    {
+      "url": "https://mope.io/shop/left.png",
+      "capture": "20250905144122",
+      "days_from_target": 2220.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/left.png",
+      "bytes": 2965
+    },
+    {
+      "url": "https://mope.io/shop/mopecoin.png",
+      "capture": "20191230093652",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/mopecoin.png",
+      "bytes": 8113
+    },
+    {
+      "url": "https://mope.io/shop/right.png",
+      "capture": "20250905144125",
+      "days_from_target": 2220.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/shop/right.png",
+      "bytes": 2910
+    },
+    {
+      "url": "http://mope.io/skins/arctic/snowleopard.png",
+      "capture": "20190601020509",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/arctic/snowleopard.png",
+      "bytes": 30533
+    },
+    {
+      "url": "https://mope.io/skins/arctic/snowman/snowman.png",
+      "capture": "20191230093638",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/arctic/snowman/snowman.png",
+      "bytes": 24291
+    },
+    {
+      "url": "https://mope.io/skins/bear.png",
+      "capture": "20191230093629",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/bear.png",
+      "bytes": 14141
+    },
+    {
+      "url": "http://mope.io/skins/blackdragon/1/kingdragon.png",
+      "capture": "20190601020431",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/blackdragon/1/kingdragon.png",
+      "bytes": 39695
+    },
+    {
+      "url": "http://mope.io/skins/cassowary/cassowary.png",
+      "capture": "20190414003512",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/cassowary/cassowary.png",
+      "bytes": 19613
+    },
+    {
+      "url": "http://mope.io/skins/chicken/chicken.png",
+      "capture": "20190414003457",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/chicken/chicken.png",
+      "bytes": 20453
+    },
+    {
+      "url": "https://mope.io/skins/desert/scorpion/1/giantscorpion.png",
+      "capture": "20191230093619",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/desert/scorpion/1/giantscorpion.png",
+      "bytes": 113728
+    },
+    {
+      "url": "http://mope.io/skins/flamingo/flamingo.png",
+      "capture": "20190414003522",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/flamingo/flamingo.png",
+      "bytes": 20418
+    },
+    {
+      "url": "http://mope.io/skins/giraffe.png",
+      "capture": "20180421014423",
+      "days_from_target": 473.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/giraffe.png",
+      "bytes": 31674
+    },
+    {
+      "url": "http://mope.io/skins/land/bigcat/blackpanther.png",
+      "capture": "20190601020505",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/bigcat/blackpanther.png",
+      "bytes": 25210
+    },
+    {
+      "url": "http://mope.io/skins/land/bigcat/cheetah.png",
+      "capture": "20190601020442",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/bigcat/cheetah.png",
+      "bytes": 24122
+    },
+    {
+      "url": "http://mope.io/skins/land/bigcat/jaguar.png",
+      "capture": "20190601020458",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/bigcat/jaguar.png",
+      "bytes": 35151
+    },
+    {
+      "url": "http://mope.io/skins/land/bigcat/leopard.png",
+      "capture": "20190601020502",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/bigcat/leopard.png",
+      "bytes": 31280
+    },
+    {
+      "url": "https://mope.io/skins/land/dragon/1/dragon.png",
+      "capture": "20191230093616",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/dragon/1/dragon.png",
+      "bytes": 20643
+    },
+    {
+      "url": "http://mope.io/skins/land/lion/1/0/lion.png",
+      "capture": "20190601020451",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/lion/1/0/lion.png",
+      "bytes": 20355
+    },
+    {
+      "url": "http://mope.io/skins/land/lion/2/0/lion.png",
+      "capture": "20190601020455",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/lion/2/0/lion.png",
+      "bytes": 20948
+    },
+    {
+      "url": "http://mope.io/skins/land/lion/3/lion.png",
+      "capture": "20190601020445",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/lion/3/lion.png",
+      "bytes": 27398
+    },
+    {
+      "url": "http://mope.io/skins/land/lion/4/lion.png",
+      "capture": "20190601020448",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/lion/4/lion.png",
+      "bytes": 22693
+    },
+    {
+      "url": "http://mope.io/skins/land/lion/5/lion.png",
+      "capture": "20190601020435",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/lion/5/lion.png",
+      "bytes": 16677
+    },
+    {
+      "url": "https://mope.io/skins/land/mouse/1/mouse.png",
+      "capture": "20200314110444",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/mouse/1/mouse.png",
+      "bytes": 37500
+    },
+    {
+      "url": "https://mope.io/skins/land/mouse/2/mouse.png",
+      "capture": "20200314110441",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/mouse/2/mouse.png",
+      "bytes": 40449
+    },
+    {
+      "url": "http://mope.io/skins/land/rhino/1/rhino.png",
+      "capture": "20190601020438",
+      "days_from_target": 67.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/land/rhino/1/rhino.png",
+      "bytes": 24310
+    },
+    {
+      "url": "http://mope.io/skins/macaw/0/macaw.png",
+      "capture": "20190414003515",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/macaw/0/macaw.png",
+      "bytes": 25386
+    },
+    {
+      "url": "http://mope.io/skins/macaw/1/macaw.png",
+      "capture": "20190414003519",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/macaw/1/macaw.png",
+      "bytes": 22864
+    },
+    {
+      "url": "http://mope.io/skins/mouse.png",
+      "capture": "20190619015633",
+      "days_from_target": 49.9,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/mouse.png",
+      "bytes": 8119
+    },
+    {
+      "url": "https://mope.io/skins/ocean/shark/1/tigershark.png",
+      "capture": "20200314110447",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/ocean/shark/1/tigershark.png",
+      "bytes": 38376
+    },
+    {
+      "url": "https://mope.io/skins/ocean/shark/2/hammerhead.png",
+      "capture": "20200314110450",
+      "days_from_target": 219.5,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/ocean/shark/2/hammerhead.png",
+      "bytes": 45859
+    },
+    {
+      "url": "http://mope.io/skins/peacock/peacock.png",
+      "capture": "20190414003504",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/peacock/peacock.png",
+      "bytes": 37782
+    },
+    {
+      "url": "http://mope.io/skins/peacock/peacock_ability.png",
+      "capture": "20190414003508",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/peacock/peacock_ability.png",
+      "bytes": 45718
+    },
+    {
+      "url": "https://mope.io/skins/shrimp.png",
+      "capture": "20191230093626",
+      "days_from_target": 144.4,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/shrimp.png",
+      "bytes": 61917
+    },
+    {
+      "url": "http://mope.io/skins/woodpecker/woodpecker.png",
+      "capture": "20190414003500",
+      "days_from_target": 116.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/skins/woodpecker/woodpecker.png",
+      "bytes": 27608
+    },
+    {
+      "url": "https://mope.io/ui_build/static/css/main.css",
+      "capture": "20210604001308",
+      "days_from_target": 666.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/ui_build/static/css/main.css",
+      "bytes": 135493
+    },
+    {
+      "url": "https://mope.io/ui_build/ui_bundle.js",
+      "capture": "20210604001312",
+      "days_from_target": 666.0,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/ui_build/ui_bundle.js",
+      "bytes": 284964
+    }
+  ],
+  "skin_names_from_client_js": [
+    "arctic/arcticfox",
+    "arctic/arctichare",
+    "arctic/chipmunk",
+    "arctic/lemming",
+    "arctic/mammoth",
+    "arctic/muskox",
+    "arctic/penguin",
+    "arctic/polarbear",
+    "arctic/reindeer",
+    "arctic/seal",
+    "arctic/snowleopard",
+    "arctic/walrus",
+    "arctic/wolf",
+    "arctic/wolverine",
+    "arctic/yeti",
+    "bear",
+    "blackdragon",
+    "bluewhale",
+    "boaConstrictor",
+    "cheetah",
+    "cobra",
+    "crab",
+    "croc",
+    "deer",
+    "donkey",
+    "dragon",
+    "duck",
+    "duckling",
+    "eagle",
+    "elephant",
+    "fox",
+    "giantSpider",
+    "giraffe",
+    "gorilla",
+    "hedgehog",
+    "hippo",
+    "jellyfish",
+    "killerwhale",
+    "kingcrab",
+    "kraken",
+    "lion",
+    "mole",
+    "mouse",
+    "octopus",
+    "pig",
+    "pufferfish",
+    "rabbit",
+    "rhino",
+    "sabertoothtiger",
+    "seahorse",
+    "shark",
+    "shrimp",
+    "snail",
+    "squid",
+    "stingray",
+    "swordfish",
+    "tiger",
+    "trex",
+    "trout",
+    "turtle",
+    "zebra"
+  ],
+  "templates_expanded": [
+    {
+      "template": "'img/banana'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/rasp'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/pear'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/seaweed'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/starfish'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/kelp'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/clam'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/conch'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/coconut'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/'+<e>+'egg'+(_e|)+'.png'",
+      "candidates": 180,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/healingStone'+<e>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/cloudberry'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/arcticNut'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/carrot'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/watermelon'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/watermelonSlice'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/meat'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/lillypad'+(_e|)+'.png'",
+      "candidates": 2,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/ability_crabSmash'+<this.specType>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/ability_tigerSlash'+<this.specType>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/riverCurrent'+<this.riverSpecT>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/santa/gifts/'+<this.specType>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'./skins/'+<i>+'.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/'+<d>+'_wing1.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'img/'+<d>+'_wing2.png'",
+      "candidates": 90,
+      "guessed_slot": true,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'2.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'2.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    },
+    {
+      "template": "'skins/'+<W(Ss).skinName>+'.png'",
+      "candidates": 61,
+      "guessed_slot": false,
+      "from": "mope.io/client.js"
+    }
+  ],
+  "not_archived": [
+    {
+      "name": "mope.io/assets/abilities/Dash-Boost.svg",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/1/gameobj/106/snow-flake.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/10.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/11.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/12.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/13.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/2.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/3.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/4.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/5.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/6.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/7.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/8.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/assets/s/2/gameobj/78/incentive/9.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/bite.mp3",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/bloop.mp3",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/click.mp3",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/music_game.mp3",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/music_menu.mp3",
+      "reason": "all clients: named in client.js@20170213101214.js"
+    },
+    {
+      "name": "mope.io/audio/nom.mp3",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/audio/tap.mp3",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/cdn-cgi/challenge-platform/h/g/flow/ov1/0.8926540451889344:1655122060:nBtxcjGgpl3WovUXF9sUOA3WVJ5NX8n3DENGBTlATas/71aaded18b935d43/27939869aaf7cc3",
+      "reason": "--all: every file arquivo.pt has, nearest copy; download failed with HTTP 404"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-browser.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-cloud.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-error.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-horizontal-arrow.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-ok.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-icon-server.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/cf-no-screenshot-error.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/cdn-cgi/images/icon-exclamation.png",
+      "reason": "referenced by cdn-cgi/styles/cf.errors.css"
+    },
+    {
+      "name": "mope.io/gameobj/18/0/0.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/gameobj/40/currentRight.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/gameobj/70/0.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_backkick.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_boaBite.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_claw.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_crabSmashSkin.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_crocBite.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_dive.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_diveMud.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_dive_lava.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_elephantTrunkSmack.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_giraffeStompLeg.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_pounce1.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_pounce2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_sabertoothJawAttack.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/ability_sharkBite.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_tigerJump.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_trexBite.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_whaleTailHit.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/ability_zebraKick.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/arcticNut.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/arcticNut_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/banana.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/banana_e.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/beehive.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/beehive_e.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/blackdragon_wing1.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/blackdragon_wing2.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/camera.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/carrot.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/carrot_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/clam.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/clam_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/cloudberry.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/cloudberry_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/coconut.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/coconut_e.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/coin/coin.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/coin/coin_e.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/conch.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/conch_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/constrict.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/custom/pad.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/custom/trampoline/leg_zebra.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/custom/trampoline/rug_zebra.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/custom/trunk1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/custom/trunk2.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/desert/anthill/anthill.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/dirt/dirt_below.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/cloud.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/cloud1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/coldwave.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/dustwave.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/heatwave.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/disasters/tsunami.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/fire.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/fire2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/firetornado.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/honeycomb.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/honeycomb_e.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/howToPlay1.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/icons/1v1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/instr_eatsymbol.png",
+      "reason": "all clients: named in client.js@20170213101214.js"
+    },
+    {
+      "name": "mope.io/img/kelp.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/kelp_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/lillypad.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/lillypad_e.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/meat.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/meat_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/pear.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/pear_e.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/quill.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/raindrop.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/rasp.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/rasp_e.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/santa/sleig.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/seaweed.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/seaweed_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/shark-head.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/snowball.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/sound_off.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/spiderWeb.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/spiderWeb_stuck.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/starfish.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/starfish_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/trex-head.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/img/viralpandemic/mask-outline.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/viralpandemic/mask.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/viralpandemic/virus.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/watermelon.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/watermelonSlice.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/watermelonSlice_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/watermelon_e.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/wave.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/web/0/spiderWeb.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/whirlpool2.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/pigeon_head.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/privacy/index.html",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/pubfig.min.js",
+      "reason": "referenced by index.html"
+    },
+    {
+      "name": "mope.io/qa/pubfig.min.js",
+      "reason": "referenced by index.html"
+    },
+    {
+      "name": "mope.io/shop/VIP_Button.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/VIP_Pass.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/back.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/clothing.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/coins.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/deals/deals.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/features.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/shop/skins.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/arcticfox.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/arcticfox2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/arctichare.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/arctichare2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/bear/bear.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/chipmunk.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/chipmunk2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/icemonster/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/icemonster/0/icemonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/lemming.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/lemming2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/mammoth.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/mammoth2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/muskox.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/muskox2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/penguin.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/penguin2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/polarbear.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/polarbear2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/reindeer.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/reindeer2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/seal.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/seal2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/snowleopard2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/snowman/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/walrus.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/walrus2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/wolf.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/wolf2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/wolverine.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/wolverine2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti/0/wolf.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti/0/yeti.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/arctic/yeti2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/bear2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/bigcat/cheetah.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/blackdragon.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/blackdragon2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/bluewhale.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/bluewhale2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/boaConstrictor.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/boaConstrictor2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/cassowary/cassowary1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/cheetah.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/cheetah2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/cobra.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/cobra2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/crab.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/crab2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/croc.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/croc2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/deer.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/deer2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/desert/bulletant/0/bulletant.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/desert/camel/spit.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/desert/gazelle/gazelle1.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/desert/pterodactyl/0/pterodactyl_ability.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/desert/scorpion/0/giantscorpion.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/dinomonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/donkey.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/donkey2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/dragon.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/dragon2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/duck.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/duck/duckling.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/duck2.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/duckling.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/duckling2.png",
+      "reason": "all clients: named in client.js@20180421014457.js"
+    },
+    {
+      "name": "mope.io/skins/eagle.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/eagle2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/elephant.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/elephant2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/falcon/falcon.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/fox.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/fox2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/frog/frog.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/frog/frogLegs.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/giantSpider.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/giantSpider2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/giraffe2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/gorilla.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/gorilla2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/hedgehog.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/hedgehog2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/hippo.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/hippo2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/icemonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/jellyfish.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/jellyfish2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/killerwhale.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/killerwhale2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/kingcrab.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/kingcrab2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/kraken.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/kraken2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/chandyo/chandyo_back.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/chandyo/chandyo_head.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/left_wing.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/right_wing.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/sultan_head.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/aiboss/sultan/tail.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/bigfoot/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/birdmonster/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/birdmonster/0/birdmonster_ability.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/chicken/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/dinomonster/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/dinomonster/0/dinomonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/dragon/0/0/dragon.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/elephant/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/falcon/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/hippo/204/roar.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/mouse/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/ostrich/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/pig/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/land/trex/0/trex.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/landmonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/lion.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/lion2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/mole.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/mole2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/monsters/dinomonster/dinomonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/monsters/icemonster/icemonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/mouse2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/kingcrab/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/kingcrab/0/kingcrab.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/kraken/0/0/kraken.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/seamonster/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/seamonster/0/seamonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/snail/snail.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ocean/snail/snail_head.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/octopus.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/octopus2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ostrich/baby-ostrich.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ostrich/ostrich-baby.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/ostrich/ostrich.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pelican/pelican.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/phoenix/phoenix.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pig.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pig2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pigeon/pigeon.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pufferfish.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/pufferfish2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/rabbit.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/rabbit2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/rhino.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/rhino2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/sabertoothtiger.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/sabertoothtiger2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/santa/.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/santa/0/sleigh.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/santa/rudolph.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/scorpion.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/seahorse.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/seahorse2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/seamonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/shark.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/shark2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/shrimp2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/snail.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/snail2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/snowyowl/snowyowl.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/squid.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/squid2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/stingray.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/stingray2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/swordfish.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/swordfish2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/tiger.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/tiger2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/toucan/toucan.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/trex.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/trex2.png",
+      "reason": "all clients: named in client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/trout.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/trout2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/turtle.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/turtle2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/volcano/blackdragon/0/blackdragon.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/volcano/landmonster/0/0/landmonster.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/volcano/phoenix/0/phoenix.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/zebra.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/skins/zebra2.png",
+      "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/snowyowl_head.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/static/media/Lato-Bold.5dd5aa02.ttf",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/Lato-Regular.9919edff.ttf",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/check-solid.bd49f52b.svg",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/coin.5c6fada9.png",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/coins.87289ba6.png",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/deals.d4848912.png",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/play_apple.f34e9a28.svg",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/play_google.1d8f7bc8.svg",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/static/media/skins.1f160aed.png",
+      "reason": "referenced by ui_build/static/css/main.css"
+    },
+    {
+      "name": "mope.io/stomp.png",
+      "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/desert/komododragon/200/0/komodo.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/land/dragon/200/3/dragon.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/ocean/crab/200/crab.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/s/1/skins/ocean/trout/200/trout.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/land/dragon/0/dragon.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/land/eagle/0/eagle.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/ocean/kraken/0/kraken.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/assets/t/3/skins/volcano/blackdragon/0/blackdragon.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-bioson.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-lion.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/free-turtle.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/interface-1.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/interface-2.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/legacy-bundle.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/new-ui.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/skin-pack-toggle.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/ui_build/img/updates/20210522/store.png",
+      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+    },
+    {
+      "name": "mope.io/updates.txt",
+      "reason": "referenced by index.html"
+    }
+  ],
+  "guessed_names_not_archived": 837
+}

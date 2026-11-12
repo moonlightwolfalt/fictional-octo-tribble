@@ -33,3 +33,9 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# mope.io archive output
+mope_archive/
+
+# Python
+__pycache__/
