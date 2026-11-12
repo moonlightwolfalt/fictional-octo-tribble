@@ -95,6 +95,8 @@ function candidates(urlPath, query) {
     out.push(q);
   }
   out.push(parts);
+  // Extension-less pages ("/privacy", "/oldmope") are saved as <path>/index.html.
+  if (!parts[parts.length - 1].includes(".")) out.push([...parts, "index.html"]);
   return out;
 }
 

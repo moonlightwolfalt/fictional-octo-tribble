@@ -5,20 +5,25 @@
   "capture_days_used": [
     "20170213",
     "20180421",
-    "20180716",
+    "20181022",
+    "20181119",
+    "20181210",
     "20190327",
     "20190414",
     "20190601",
     "20191010",
     "20191230",
     "20200314",
+    "20200331",
     "20200613",
+    "20200814",
     "20200910",
     "20201203",
     "20210310",
     "20210604",
     "20220601",
     "20220624",
+    "20250212",
     "20250315",
     "20250905"
   ],
@@ -26,6 +31,7 @@
     {
       "url": "http://mope.io/adblockdet/ads.js",
       "capture": "20190327115359",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/adblockdet/ads.js",
@@ -34,6 +40,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/turkey/0/turkey_full.png",
       "capture": "20201203172123",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/turkey/0/turkey_full.png",
@@ -42,6 +49,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/turkey/pumpkinpie.png",
       "capture": "20201203172134",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/turkey/pumpkinpie.png",
@@ -50,6 +58,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeybaked.png",
       "capture": "20201203172130",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/turkey/turkeybaked.png",
@@ -58,6 +67,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/turkey/turkeyleg.png",
       "capture": "20201203172139",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/turkey/turkeyleg.png",
@@ -66,6 +76,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/1/giraffe.png",
       "capture": "20201203172127",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/whitegiraffe/1/giraffe.png",
@@ -74,6 +85,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/forest/whitegiraffe/2/giraffe_family.png",
       "capture": "20201203172144",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/forest/whitegiraffe/2/giraffe_family.png",
@@ -82,6 +94,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/land/aiboss/gujjar.png",
       "capture": "20210310091752",
+      "source": "arquivo.pt",
       "days_from_target": 842.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/land/aiboss/gujjar.png",
@@ -90,6 +103,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/land/aiboss/sultan.png",
       "capture": "20210310091757",
+      "source": "arquivo.pt",
       "days_from_target": 842.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/land/aiboss/sultan.png",
@@ -98,6 +112,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/land/giraffe/3/giraffe_family.png",
       "capture": "20201203172148",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/land/giraffe/3/giraffe_family.png",
@@ -106,6 +121,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
       "capture": "20250315124219",
+      "source": "arquivo.pt",
       "days_from_target": 2308.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/land/mouse/0/mouse.png",
@@ -114,6 +130,7 @@
     {
       "url": "https://mope.io/assets/s/1/skins/mouse.png",
       "capture": "20201203172211",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/assets/s/1/skins/mouse.png",
@@ -122,6 +139,7 @@
     {
       "url": "https://mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
       "capture": "20201203172104",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/apps/head/X2NGd4C5a3tonHwpUwe1lo9cVCc.js",
@@ -130,22 +148,25 @@
     {
       "url": "https://mope.io/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1?ray=7208a6875b6f03ae",
       "capture": "20220624214527",
+      "source": "arquivo.pt",
       "days_from_target": 1313.9,
       "reason": "--all: every file arquivo.pt has, nearest copy",
-      "path": "mope.io/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1",
+      "path": "mope.io/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1/index.html",
       "bytes": 44909
     },
     {
       "url": "https://mope.io/cdn-cgi/challenge-platform/h/g/orchestrate/managed/v1?ray=714a98794bcf03ba",
       "capture": "20220601201058",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
-      "path": "mope.io/cdn-cgi/challenge-platform/h/g/orchestrate/managed/v1",
+      "path": "mope.io/cdn-cgi/challenge-platform/h/g/orchestrate/managed/v1/index.html",
       "bytes": 42686
     },
     {
       "url": "https://mope.io/cdn-cgi/images/browser-bar.png?1376755637",
       "capture": "20220601201058",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/images/browser-bar.png",
@@ -154,6 +175,7 @@
     {
       "url": "https://mope.io/cdn-cgi/images/cf-no-screenshot-warn.png",
       "capture": "20220601201101",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/images/cf-no-screenshot-warn.png",
@@ -162,6 +184,7 @@
     {
       "url": "https://mope.io/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif?ray=714a98794bcf03ba",
       "capture": "20220601201101",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif",
@@ -170,14 +193,25 @@
     {
       "url": "https://mope.io/cdn-cgi/images/trace/managed/js/transparent.gif?ray=714a98794bcf03ba",
       "capture": "20220601201058",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/images/trace/managed/js/transparent.gif",
       "bytes": 42
     },
     {
+      "url": "https://mope.io/cdn-cgi/l/email-protection",
+      "capture": "20200331141802",
+      "source": "commoncrawl",
+      "days_from_target": 498.6,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/cdn-cgi/l/email-protection/index.html",
+      "bytes": 3907
+    },
+    {
       "url": "https://mope.io/cdn-cgi/styles/cf.errors.css",
       "capture": "20220601201057",
+      "source": "arquivo.pt",
       "days_from_target": 1290.8,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/cdn-cgi/styles/cf.errors.css",
@@ -186,6 +220,7 @@
     {
       "url": "http://mope.io/client.js",
       "capture": "20180421014457",
+      "source": "arquivo.pt",
       "days_from_target": 211.9,
       "reason": "game client (loaded with a cache-busting ?x=)",
       "path": "mope.io/client.js",
@@ -194,6 +229,7 @@
     {
       "url": "https://mope.io/dfp.js",
       "capture": "20200910235701",
+      "source": "arquivo.pt",
       "days_from_target": 662.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/dfp.js",
@@ -202,6 +238,7 @@
     {
       "url": "http://mope.io/favicon.ico",
       "capture": "20190327115351",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/favicon.ico",
@@ -210,6 +247,7 @@
     {
       "url": "http://mope.io/img/appAd_and.png",
       "capture": "20190327115456",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/appAd_and.png",
@@ -218,6 +256,7 @@
     {
       "url": "http://mope.io/img/appAd_ios.png",
       "capture": "20190327115452",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/appAd_ios.png",
@@ -226,6 +265,7 @@
     {
       "url": "http://mope.io/img/blocked.png",
       "capture": "20180421014410",
+      "source": "arquivo.pt",
       "days_from_target": 211.9,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/blocked.png",
@@ -234,6 +274,7 @@
     {
       "url": "http://mope.io/img/logo.png",
       "capture": "20190327115440",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/logo.png",
@@ -242,6 +283,7 @@
     {
       "url": "http://mope.io/img/mode_norm.png",
       "capture": "20170213101039",
+      "source": "arquivo.pt",
       "days_from_target": 643.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/mode_norm.png",
@@ -250,6 +292,7 @@
     {
       "url": "http://mope.io/img/mode_sandbox.png",
       "capture": "20170213101050",
+      "source": "arquivo.pt",
       "days_from_target": 643.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/mode_sandbox.png",
@@ -258,6 +301,7 @@
     {
       "url": "https://mope.io/img/newconfirmmsg.png",
       "capture": "20200910235616",
+      "source": "arquivo.pt",
       "days_from_target": 662.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/newconfirmmsg.png",
@@ -266,6 +310,7 @@
     {
       "url": "https://mope.io/img/promo_areaops.png",
       "capture": "20200910235624",
+      "source": "arquivo.pt",
       "days_from_target": 662.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/promo_areaops.png",
@@ -274,6 +319,7 @@
     {
       "url": "https://mope.io/img/promo_coins.png",
       "capture": "20200910235627",
+      "source": "arquivo.pt",
       "days_from_target": 662.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/promo_coins.png",
@@ -282,6 +328,7 @@
     {
       "url": "https://mope.io/img/promo_hidhole.png",
       "capture": "20200910235620",
+      "source": "arquivo.pt",
       "days_from_target": 662.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/promo_hidhole.png",
@@ -290,6 +337,7 @@
     {
       "url": "https://mope.io/img/promo_yt.png",
       "capture": "20200613164927",
+      "source": "arquivo.pt",
       "days_from_target": 572.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/promo_yt.png",
@@ -298,6 +346,7 @@
     {
       "url": "http://mope.io/img/settings.png",
       "capture": "20190327115444",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/settings.png",
@@ -306,6 +355,7 @@
     {
       "url": "http://mope.io/img/share_banner.jpg",
       "capture": "20191010213555",
+      "source": "arquivo.pt",
       "days_from_target": 325.9,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/share_banner.jpg",
@@ -314,6 +364,7 @@
     {
       "url": "http://mope.io/img/sound_on.png",
       "capture": "20180421014238",
+      "source": "arquivo.pt",
       "days_from_target": 211.9,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/sound_on.png",
@@ -322,6 +373,7 @@
     {
       "url": "http://mope.io/img/splixpromo.png",
       "capture": "20170213101203",
+      "source": "arquivo.pt",
       "days_from_target": 643.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/splixpromo.png",
@@ -330,6 +382,7 @@
     {
       "url": "https://mope.io/img/update/promo10.png",
       "capture": "20200314110423",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promo10.png",
@@ -338,6 +391,7 @@
     {
       "url": "https://mope.io/img/update/promo3.png",
       "capture": "20200314110434",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promo3.png",
@@ -346,6 +400,7 @@
     {
       "url": "https://mope.io/img/update/promo4.png",
       "capture": "20200314110454",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promo4.png",
@@ -354,6 +409,7 @@
     {
       "url": "https://mope.io/img/update/promo5.png",
       "capture": "20200314110457",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promo5.png",
@@ -362,6 +418,7 @@
     {
       "url": "https://mope.io/img/update/promoimg.png",
       "capture": "20200314110431",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promoimg.png",
@@ -370,6 +427,7 @@
     {
       "url": "https://mope.io/img/update/promoimg2.png",
       "capture": "20200314110427",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/promoimg2.png",
@@ -378,6 +436,7 @@
     {
       "url": "https://mope.io/img/update/upd_skins.png",
       "capture": "20191230093623",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/upd_skins.png",
@@ -386,6 +445,7 @@
     {
       "url": "https://mope.io/img/update/volcanic-eruption.png",
       "capture": "20191230093634",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/update/volcanic-eruption.png",
@@ -394,6 +454,7 @@
     {
       "url": "https://mope.io/img/updates/20201126/arena-options1.png",
       "capture": "20201203172200",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/updates/20201126/arena-options1.png",
@@ -402,6 +463,7 @@
     {
       "url": "https://mope.io/img/updates/20201126/arena-options2.png",
       "capture": "20201203172157",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/updates/20201126/arena-options2.png",
@@ -410,6 +472,7 @@
     {
       "url": "https://mope.io/img/updates/20201126/ocean-islands.png",
       "capture": "20201203172152",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/updates/20201126/ocean-islands.png",
@@ -418,6 +481,7 @@
     {
       "url": "http://mope.io/img/x.png",
       "capture": "20190327115448",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/img/x.png",
@@ -425,15 +489,17 @@
     },
     {
       "url": "http://mope.io/",
-      "capture": "20180716191619",
-      "days_from_target": 125.2,
+      "capture": "20181022035700",
+      "source": "commoncrawl",
+      "days_from_target": 27.8,
       "reason": "start page nearest the date",
       "path": "mope.io/index.html",
-      "bytes": 19861
+      "bytes": 10912
     },
     {
       "url": "https://mope.io/jquery_3_3_1.js",
       "capture": "20191230093610",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/jquery_3_3_1.js",
@@ -442,6 +508,7 @@
     {
       "url": "http://mope.io/main.css?v=1.20.3",
       "capture": "20190327115355",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/main.css",
@@ -450,30 +517,70 @@
     {
       "url": "https://mope.io/main_nerged.css?v=live.257",
       "capture": "20210310091736",
+      "source": "arquivo.pt",
       "days_from_target": 842.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/main_nerged.css",
       "bytes": 67696
     },
     {
+      "url": "http://mope.io/oldmope/",
+      "capture": "20181210134801",
+      "source": "commoncrawl",
+      "days_from_target": 21.6,
+      "reason": "captured within 45 days",
+      "path": "mope.io/oldmope/index.html",
+      "bytes": 5480
+    },
+    {
+      "url": "http://mope.io/oldmope/updates.txt",
+      "capture": "20181210135731",
+      "source": "commoncrawl",
+      "days_from_target": 21.6,
+      "reason": "captured within 45 days",
+      "path": "mope.io/oldmope/updates.txt",
+      "bytes": 23106
+    },
+    {
       "url": "http://mope.io/privacy/",
       "capture": "20190414003436",
+      "source": "arquivo.pt",
       "days_from_target": 146.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
-      "path": "mope.io/privacy",
+      "path": "mope.io/privacy/index.html",
       "bytes": 6310
     },
     {
-      "url": "http://mope.io/robots.txt",
-      "capture": "20180716191615",
-      "days_from_target": 125.2,
+      "url": "https://mope.io/privacy/index.html",
+      "capture": "20200814234709",
+      "source": "commoncrawl",
+      "days_from_target": 635.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/privacy/index.html",
+      "bytes": 6310
+    },
+    {
+      "url": "http://www.mope.io/robots.txt",
+      "capture": "20181119213937",
+      "source": "commoncrawl",
+      "days_from_target": 0.9,
+      "reason": "captured within 45 days",
       "path": "mope.io/robots.txt",
-      "bytes": 25
+      "bytes": 29
+    },
+    {
+      "url": "http://mope.io/sandbox/",
+      "capture": "20181210135012",
+      "source": "commoncrawl",
+      "days_from_target": 21.6,
+      "reason": "captured within 45 days",
+      "path": "mope.io/sandbox/index.html",
+      "bytes": 207
     },
     {
       "url": "https://mope.io/shop/close.png",
       "capture": "20201203172120",
+      "source": "arquivo.pt",
       "days_from_target": 745.7,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/close.png",
@@ -482,6 +589,7 @@
     {
       "url": "https://mope.io/shop/exp.png",
       "capture": "20250905144119",
+      "source": "arquivo.pt",
       "days_from_target": 2482.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/exp.png",
@@ -490,6 +598,7 @@
     {
       "url": "https://mope.io/shop/gem.png",
       "capture": "20250905144046",
+      "source": "arquivo.pt",
       "days_from_target": 2482.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/gem.png",
@@ -498,6 +607,7 @@
     {
       "url": "https://mope.io/shop/left.png",
       "capture": "20250905144122",
+      "source": "arquivo.pt",
       "days_from_target": 2482.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/left.png",
@@ -506,6 +616,7 @@
     {
       "url": "https://mope.io/shop/mopecoin.png",
       "capture": "20191230093652",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/mopecoin.png",
@@ -514,6 +625,7 @@
     {
       "url": "https://mope.io/shop/right.png",
       "capture": "20250905144125",
+      "source": "arquivo.pt",
       "days_from_target": 2482.6,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/shop/right.png",
@@ -522,6 +634,7 @@
     {
       "url": "http://mope.io/skins/arctic/snowleopard.png",
       "capture": "20190601020509",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/arctic/snowleopard.png",
@@ -530,6 +643,7 @@
     {
       "url": "https://mope.io/skins/arctic/snowman/snowman.png",
       "capture": "20191230093638",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/arctic/snowman/snowman.png",
@@ -538,6 +652,7 @@
     {
       "url": "https://mope.io/skins/bear.png",
       "capture": "20191230093629",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/bear.png",
@@ -546,6 +661,7 @@
     {
       "url": "http://mope.io/skins/blackdragon/1/kingdragon.png",
       "capture": "20190601020431",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/blackdragon/1/kingdragon.png",
@@ -554,6 +670,7 @@
     {
       "url": "http://mope.io/skins/cassowary/cassowary.png",
       "capture": "20190327115425",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/cassowary/cassowary.png",
@@ -562,6 +679,7 @@
     {
       "url": "http://mope.io/skins/chicken/chicken.png",
       "capture": "20190327115408",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/chicken/chicken.png",
@@ -570,6 +688,7 @@
     {
       "url": "https://mope.io/skins/desert/scorpion/1/giantscorpion.png",
       "capture": "20191230093619",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/desert/scorpion/1/giantscorpion.png",
@@ -578,6 +697,7 @@
     {
       "url": "http://mope.io/skins/flamingo/flamingo.png",
       "capture": "20190327115436",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/flamingo/flamingo.png",
@@ -586,6 +706,7 @@
     {
       "url": "http://mope.io/skins/giraffe.png",
       "capture": "20180421014423",
+      "source": "arquivo.pt",
       "days_from_target": 211.9,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/giraffe.png",
@@ -594,6 +715,7 @@
     {
       "url": "http://mope.io/skins/land/bigcat/blackpanther.png",
       "capture": "20190601020505",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/bigcat/blackpanther.png",
@@ -602,6 +724,7 @@
     {
       "url": "http://mope.io/skins/land/bigcat/cheetah.png",
       "capture": "20190601020442",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/bigcat/cheetah.png",
@@ -610,6 +733,7 @@
     {
       "url": "http://mope.io/skins/land/bigcat/jaguar.png",
       "capture": "20190601020458",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/bigcat/jaguar.png",
@@ -618,6 +742,7 @@
     {
       "url": "http://mope.io/skins/land/bigcat/leopard.png",
       "capture": "20190601020502",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/bigcat/leopard.png",
@@ -626,6 +751,7 @@
     {
       "url": "https://mope.io/skins/land/dragon/1/dragon.png",
       "capture": "20191230093616",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/dragon/1/dragon.png",
@@ -634,6 +760,7 @@
     {
       "url": "http://mope.io/skins/land/lion/1/0/lion.png",
       "capture": "20190601020451",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/lion/1/0/lion.png",
@@ -642,6 +769,7 @@
     {
       "url": "http://mope.io/skins/land/lion/2/0/lion.png",
       "capture": "20190601020455",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/lion/2/0/lion.png",
@@ -650,6 +778,7 @@
     {
       "url": "http://mope.io/skins/land/lion/3/lion.png",
       "capture": "20190601020445",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/lion/3/lion.png",
@@ -658,6 +787,7 @@
     {
       "url": "http://mope.io/skins/land/lion/4/lion.png",
       "capture": "20190601020448",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/lion/4/lion.png",
@@ -666,6 +796,7 @@
     {
       "url": "http://mope.io/skins/land/lion/5/lion.png",
       "capture": "20190601020435",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/lion/5/lion.png",
@@ -674,6 +805,7 @@
     {
       "url": "https://mope.io/skins/land/mouse/1/mouse.png",
       "capture": "20200314110444",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/mouse/1/mouse.png",
@@ -682,6 +814,7 @@
     {
       "url": "https://mope.io/skins/land/mouse/2/mouse.png",
       "capture": "20200314110441",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/mouse/2/mouse.png",
@@ -690,6 +823,7 @@
     {
       "url": "http://mope.io/skins/land/rhino/1/rhino.png",
       "capture": "20190601020438",
+      "source": "arquivo.pt",
       "days_from_target": 194.1,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/land/rhino/1/rhino.png",
@@ -698,6 +832,7 @@
     {
       "url": "http://mope.io/skins/macaw/0/macaw.png",
       "capture": "20190327115429",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/macaw/0/macaw.png",
@@ -706,6 +841,7 @@
     {
       "url": "http://mope.io/skins/macaw/1/macaw.png",
       "capture": "20190327115433",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/macaw/1/macaw.png",
@@ -714,6 +850,7 @@
     {
       "url": "http://mope.io/skins/mouse.png",
       "capture": "20190327115404",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/mouse.png",
@@ -722,6 +859,7 @@
     {
       "url": "https://mope.io/skins/ocean/shark/1/tigershark.png",
       "capture": "20200314110447",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/ocean/shark/1/tigershark.png",
@@ -730,6 +868,7 @@
     {
       "url": "https://mope.io/skins/ocean/shark/2/hammerhead.png",
       "capture": "20200314110450",
+      "source": "arquivo.pt",
       "days_from_target": 481.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/ocean/shark/2/hammerhead.png",
@@ -738,6 +877,7 @@
     {
       "url": "http://mope.io/skins/peacock/peacock.png",
       "capture": "20190327115416",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/peacock/peacock.png",
@@ -746,6 +886,7 @@
     {
       "url": "http://mope.io/skins/peacock/peacock_ability.png",
       "capture": "20190327115420",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/peacock/peacock_ability.png",
@@ -754,6 +895,7 @@
     {
       "url": "https://mope.io/skins/shrimp.png",
       "capture": "20191230093626",
+      "source": "arquivo.pt",
       "days_from_target": 406.4,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/shrimp.png",
@@ -762,6 +904,7 @@
     {
       "url": "http://mope.io/skins/woodpecker/woodpecker.png",
       "capture": "20190327115412",
+      "source": "arquivo.pt",
       "days_from_target": 128.5,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/skins/woodpecker/woodpecker.png",
@@ -770,6 +913,7 @@
     {
       "url": "https://mope.io/ui_build/static/css/main.css",
       "capture": "20210604001308",
+      "source": "arquivo.pt",
       "days_from_target": 928.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/ui_build/static/css/main.css",
@@ -778,10 +922,29 @@
     {
       "url": "https://mope.io/ui_build/ui_bundle.js",
       "capture": "20210604001312",
+      "source": "arquivo.pt",
       "days_from_target": 928.0,
       "reason": "--all: every file arquivo.pt has, nearest copy",
       "path": "mope.io/ui_build/ui_bundle.js",
       "bytes": 284964
+    },
+    {
+      "url": "http://www.mope.io/updates.txt",
+      "capture": "20181119213937",
+      "source": "commoncrawl",
+      "days_from_target": 0.9,
+      "reason": "captured within 45 days",
+      "path": "mope.io/updates.txt",
+      "bytes": 71364
+    },
+    {
+      "url": "https://mope.io/updates",
+      "capture": "20250212081309",
+      "source": "commoncrawl",
+      "days_from_target": 2277.3,
+      "reason": "--all: every file arquivo.pt has, nearest copy",
+      "path": "mope.io/updates/index.html",
+      "bytes": 3568
     }
   ],
   "skin_names_from_client_js": [
@@ -1305,6 +1468,18 @@
       "reason": "referenced by cdn-cgi/styles/cf.errors.css"
     },
     {
+      "name": "mope.io/cdn-cgi/scripts/cf.common.js",
+      "reason": "referenced by cdn-cgi/l/email-protection"
+    },
+    {
+      "name": "mope.io/cdn-cgi/scripts/zepto.min.js",
+      "reason": "referenced by cdn-cgi/l/email-protection"
+    },
+    {
+      "name": "mope.io/cdn-cgi/styles/cf.errors.ie.css",
+      "reason": "referenced by cdn-cgi/l/email-protection"
+    },
+    {
       "name": "mope.io/gameobj/18/0/0.png",
       "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
     },
@@ -1403,6 +1578,10 @@
     {
       "name": "mope.io/img/banana_e.png",
       "reason": "all clients: named in client.js@20170213101214.js, client.js@20180421014457.js, client.js@20250905144100.js, client.js@20251210042757.js"
+    },
+    {
+      "name": "mope.io/img/banner.jpg",
+      "reason": "referenced by oldmope"
     },
     {
       "name": "mope.io/img/beehive.png",
@@ -1653,6 +1832,14 @@
       "reason": "all clients: named in client.js@20180421014457.js"
     },
     {
+      "name": "mope.io/img/update/1v1teaser.png",
+      "reason": "referenced by index.html"
+    },
+    {
+      "name": "mope.io/img/update/br.png",
+      "reason": "referenced by index.html"
+    },
+    {
       "name": "mope.io/img/viralpandemic/mask-outline.png",
       "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
     },
@@ -1693,12 +1880,36 @@
       "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
     },
     {
+      "name": "mope.io/oldmope/audio/click.mp3",
+      "reason": "referenced by oldmope"
+    },
+    {
+      "name": "mope.io/oldmope/client.js",
+      "reason": "referenced by oldmope"
+    },
+    {
+      "name": "mope.io/oldmope/favicon.ico",
+      "reason": "referenced by oldmope"
+    },
+    {
+      "name": "mope.io/oldmope/img/settings.png",
+      "reason": "referenced by oldmope"
+    },
+    {
+      "name": "mope.io/oldmope/main.css",
+      "reason": "referenced by oldmope"
+    },
+    {
       "name": "mope.io/pigeon_head.png",
       "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
     },
     {
-      "name": "mope.io/privacy/index.html",
-      "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
+      "name": "mope.io/pubfig.min.js",
+      "reason": "referenced by index.html"
+    },
+    {
+      "name": "mope.io/qa/pubfig.min.js",
+      "reason": "referenced by index.html"
     },
     {
       "name": "mope.io/shop/VIP_Button.png",
@@ -2433,22 +2644,6 @@
       "reason": "referenced by index.html"
     },
     {
-      "name": "mope.io/skins/toucan/1/toucan.png",
-      "reason": "referenced by index.html"
-    },
-    {
-      "name": "mope.io/skins/toucan/2/toucan.png",
-      "reason": "referenced by index.html"
-    },
-    {
-      "name": "mope.io/skins/toucan/3/toucan.png",
-      "reason": "referenced by index.html"
-    },
-    {
-      "name": "mope.io/skins/toucan/4/toucan.png",
-      "reason": "referenced by index.html"
-    },
-    {
       "name": "mope.io/skins/toucan/toucan.png",
       "reason": "all clients: named in client.js@20250905144100.js, client.js@20251210042757.js"
     },
@@ -2607,10 +2802,6 @@
     {
       "name": "mope.io/ui_build/img/updates/20210522/store.png",
       "reason": "all clients: named in ui_bundle.js@20210604001312.js, ui_bundle.js@20210612030300.js"
-    },
-    {
-      "name": "mope.io/updates.txt",
-      "reason": "referenced by index.html"
     }
   ],
   "guessed_names_not_archived": 837

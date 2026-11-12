@@ -61,6 +61,7 @@ CC_DATA = "https://data.commoncrawl.org"
 USER_AGENT = "mope-snapshot-fetcher/1.0 (python)"
 
 ASSET_EXT = r"(?:png|jpe?g|gif|svg|webp|ico|mp3|ogg|wav|m4a|json|js|css|woff2?|ttf|txt|xml|html?)"
+FAILED = object()  # _download's result when a capture couldn't be fetched
 GUESS = "guess:"  # marks names built by filling an unknown template slot
 TEXT_TYPES = ("text/", "application/javascript", "application/x-javascript", "application/json")
 
@@ -109,10 +110,26 @@ def url_key(url: str) -> str | None:
 
 def local_path(root: Path, key: str) -> Path:
     host, _, path = key.partition("/")
-    if path == "" or key.endswith("/"):
-        path = (path + "/index.html").lstrip("/")
+    last = path.rsplit("/", 1)[-1]
+    # "", "privacy/", and extension-less pages ("oldmope", "sandbox") are
+    # directory-style URLs: save them as <path>/index.html so a later
+    # "oldmope/updates.txt" can live beside them.
+    if path == "" or key.endswith("/") or "." not in last:
+        path = (path.rstrip("/") + "/index.html").lstrip("/")
     safe = [re.sub(r"[^\w.@+-]", "_", p) for p in path.split("/") if p]
     return root.joinpath(host, *safe)
+
+
+def make_parent(dest: Path) -> None:
+    """mkdir -p dest.parent, moving any file in the way to <file>/index.html
+    (left by older runs that saved directory-style pages as plain files)."""
+    for parent in reversed(dest.parents):
+        if parent.is_file():
+            tmp = parent.with_name(parent.name + ".tmp-move")
+            parent.rename(tmp)
+            parent.mkdir()
+            tmp.rename(parent / "index.html")
+    dest.parent.mkdir(parents=True, exist_ok=True)
 
 
 @dataclass
@@ -206,6 +223,10 @@ class CaptureIndex:
         cache.write_text("\n".join(json.dumps(r) for r in rows) + "\n")
         log(f"Capture index: {len(rows)} rows fetched from arquivo.pt")
         return cls(rows)
+
+    def ranked(self, key: str, target: str) -> list[Capture]:
+        """Captures of key, nearest to target first."""
+        return sorted(self.by_key.get(key, []), key=lambda c: days_between(c.timestamp, target))
 
     def nearest(self, key: str, target: str) -> Capture | None:
         caps = self.by_key.get(key)
@@ -584,13 +605,21 @@ class Snapshot:
                     self.missing[key] = reason
                 continue
             self.done.add(key)
-            cap = self.index.nearest(key, self.target)
-            if not cap:
+            ranked = self.index.ranked(key, self.target)
+            if not ranked:
                 self.missing.setdefault(key, reason)
                 continue
-            data = self._download(key, cap, reason)
-            if data is None:
+            # Nearest capture first; if its download fails (an archive hiccup,
+            # or a stored error page), fall back to the next nearest.
+            data, cap = None, None
+            for cap in ranked[:4]:
+                data = self._download(key, cap, reason)
+                if data is not FAILED:
+                    break
+                log(f"    trying the next nearest capture of {key}")
+            if data is FAILED or data is None:
                 continue
+            self.missing.pop(key, None)
             mime = (cap.mime or "").lower()
             if mime.startswith(TEXT_TYPES) or key.endswith((".js", ".css", ".html", "/")):
                 for ref_key, why in self._extract(key, cap, data):
@@ -621,7 +650,7 @@ class Snapshot:
             log(f"  have   {key}")
         elif cache_id in self.cache:
             src = self.cache[cache_id]
-            dest.parent.mkdir(parents=True, exist_ok=True)
+            make_parent(dest)
             if Path(src) != dest:
                 shutil.copyfile(src, dest)
             data = dest.read_bytes()
@@ -631,8 +660,8 @@ class Snapshot:
             if status != 200:
                 log(f"  fail   {key} (HTTP {status})")
                 self.missing.setdefault(key, f"{reason}; download failed with HTTP {status}")
-                return None
-            dest.parent.mkdir(parents=True, exist_ok=True)
+                return FAILED
+            make_parent(dest)
             dest.write_bytes(data)
             log(f"  saved  {key}  <- {cap.source} {cap.timestamp} ({off:.0f}d off, {len(data)} bytes)")
         self.cache[cache_id] = str(dest)
@@ -777,6 +806,8 @@ def main(argv=None) -> int:
                     help="also search Common Crawl's crawls for mope.io and use its captures as a second source")
     ap.add_argument("--cc-since", default="2016", help="only Common Crawl crawls from this year on (default 2016)")
     ap.add_argument("--cc-workers", type=int, default=4, help="Common Crawl crawls to search at once (default 4)")
+    ap.add_argument("--cc-passes", type=int, default=3,
+                    help="search passes over unsearched Common Crawl crawls (default 3; 0 = use the cache only)")
     ap.add_argument("--all", action="store_true",
                     help="also include every mope.io file arquivo.pt ever captured (nearest copy to each date)")
     ap.add_argument("--all-clients", action="store_true",
@@ -795,7 +826,8 @@ def main(argv=None) -> int:
     index = CaptureIndex.load(http, out / ".arquivo-cdx-mope.io.jsonl", args.refresh_index)
     if args.commoncrawl:
         cc = commoncrawl_rows(Http(delay=args.delay, retries=args.retries), out,
-                              args.cc_since, args.refresh_index, workers=args.cc_workers)
+                              args.cc_since, args.refresh_index, workers=args.cc_workers,
+                              passes=args.cc_passes)
         n = index.add_rows(cc, "commoncrawl")
         log(f"Common Crawl: {n} usable captures added "
             f"({len({url_key(r['url']) for r in cc if str(r.get('status')) == '200'} - {None})} distinct files)")

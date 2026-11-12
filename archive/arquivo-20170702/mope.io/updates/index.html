@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mope.io updates archive</title>
+</head>
+
+<body>
+  <h1>This is an update archive for mope.io</h1>
+  <h2>Data before 9th of November 2024 is not tracked.</h2>
+  <h3 id="error"></h3>
+  <div id="updates"></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"910b1e249c8581c3","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"27ea0957589246938b0d3ecf35b4bdc1","b":1}' crossorigin="anonymous"></script>
+</body>
+<script>
+  // :) Have fun with this code.
+  let updates_data = [];
+  let error = document.querySelector("#error");
+  let updates = document.querySelector("#updates");
+  fetch("updates.json?t=" + Date.now())
+    .then((res) => res.json())
+    .then((res) => {
+      fetch("updates_archive.json?t=" + Date.now())
+        .then((r) => r.json())
+        .then((k) => {
+          addUpdates(parseUpdates([...res, ...k]));
+        })
+        .catch((e) => {
+          error.innerHTML =
+            "An error getting archive data happened! Archived data is not available";
+          addUpdates(parseUpdates(res));
+        });
+    })
+    .catch((e) => {
+      error.innerHTML = "An error happened! Check your internet connection.";
+    });
+
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  function parseUpdates(json) {
+    const blocks = [];
+    for (let i = 0; i < json.length; i++) {
+      const obj = json[i];
+
+      const date = new Date(obj.date);
+
+      const headerTxt =
+        "[" + obj.env.toUpperCase() + "] " + months[date.getUTCMonth()] +
+        " " +
+        date.getUTCDate() +
+        " " +
+        date.getUTCFullYear() +
+        ": " +
+        obj.title;
+      const title = document.createElement("h2");
+      title.innerText = headerTxt;
+      const br = document.createElement("br");
+      const ul = document.createElement("ul");
+      let block = [title, br, ul];
+      parseDescription(obj.description, ul);
+      blocks.push(block);
+    }
+    return blocks;
+  }
+
+  function parseDescription(description, ul) {
+    for (let i = 0; i < description.length; i++) {
+      const item = description[i];
+      if (typeof item == "string") {
+        const string = document.createElement("li");
+        string.innerHTML = item;
+        ul.appendChild(string);
+      } else if (typeof item == "object") {
+        const baseLi = document.createElement("li");
+        const h2 = document.createElement("h2");
+        const localUl = document.createElement("ul");
+        h2.innerText = item.title;
+        baseLi.appendChild(h2);
+        baseLi.appendChild(localUl);
+        ul.appendChild(baseLi);
+        parseDescription(item.description, localUl);
+      }
+    }
+  }
+
+  function addUpdates(blocks) {
+    for (let i = 0; i < blocks.length; i++) {
+      if (Array.isArray(blocks[i])) {
+        for (let j = 0; j < blocks[i].length; j++) {
+          if (Array.isArray(blocks[i][j])) {
+            addUpdates(blocks[i][j]);
+          } else {
+            updates.appendChild(blocks[i][j]);
+          }
+        }
+      } else {
+        updates.appendChild(blocks[i]);
+      }
+    }
+  }
+</script>
+
+</html>
+

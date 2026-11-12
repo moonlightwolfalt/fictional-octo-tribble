@@ -44,7 +44,7 @@ Fetches the copy of mope.io nearest each date, plus every asset its `client.js` 
 runtime. Only the Python standard library is needed.
 
 ```sh
-python3 mope_snapshots.py                    # 20170702 20181119 20190808 20201218
+python3 mope_snapshots.py                    # 20161002 20170213 20170702 20181119 20190808 20201218
 python3 mope_snapshots.py --all 20170213     # + every file arquivo.pt ever saved
 python3 mope_snapshots.py --all --all-clients 20170213 20170702 20181119 20190808 20201218
 python3 mope_snapshots.py --dry-run          # plan only
@@ -96,6 +96,17 @@ says which). Common Crawl files are read by byte range from `data.commoncrawl.or
 unpacked from their archive record (gzip, then the stored HTTP response, de-chunked and
 decompressed).
 
+If a file's nearest capture can't be fetched (an archive hiccup, or an error page that
+was archived in place of the file), the next-nearest capture is used instead.
+Extension-less pages (`/privacy`, `/oldmope`) are saved as `<path>/index.html`.
+
+Common Crawl added closer start pages: **2016-10-21** for 2016-10-02 (the original date,
+which arquivo.pt doesn't cover), **2017-06-25** for 2017-07-02, and **2018-10-22** for
+2018-11-19. It also added the `updates.txt` changelog (on 2018-11-19 itself),
+`oldmope/`, `sandbox` and `privacy` pages. It holds no artwork. 58 of its 106 crawls since
+2016 have been searched; the index server refused the other 48. `--cc-passes 0` reuses the
+cache without searching.
+
 Common Crawl's search server is flaky. Each crawl's result is cached as it arrives
 (`archive/.commoncrawl-cdx-mope.io.jsonl`, `.commoncrawl-crawls-done.json`), so a rerun
 only searches the crawls that failed.
@@ -129,11 +140,11 @@ DEFAULT_SNAPSHOT=arquivo-20170702 node server.js
   the picker.
 - **`/status.json`:** players and worlds per snapshot. **`/healthz`:** health check.
 
-**Playable** snapshots (2017-02-13, 2017-07-02) use the v178 client, which the stand-in game
+**Playable** snapshots (2016-10-02, 2017-02-13, 2017-07-02) use the v178 client, which the stand-in game
 server below speaks. **Page only** snapshots (2018–2020) show the archived page and its
-changelog, but no `client.js` was archived for those dates. The nearest one (v209, April
-2018) stops with an error before connecting, because their pages lack elements it
-expects, and the stand-in doesn't speak v209 yet.
+changelog, and their client (the nearest archived one, v209 from April 2018) reaches its
+start menu. The server adds hidden stand-ins for page elements that client expects but
+those later pages lack. Joining a game isn't supported for v209.
 
 Each snapshot gets its own game world and WebSockets at `/ws/<snapshot>/<port>/<ip>`.
 `client.js` opens WebSockets to mope.io's original servers by IP (game on port 7020,

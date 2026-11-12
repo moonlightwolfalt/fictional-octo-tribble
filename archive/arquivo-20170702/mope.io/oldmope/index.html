@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  body {
+    background-color: #3FBA54
+  }
+</style>
+<head>
+<title>mope.io classic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="Survive and climb the food chain in mopeio, the hit browser game!">
+<meta name="keywords" content="mope, mope.io, mopeio,io games, .io, spaceships, browser game, html game, html5 game, agario, diepio, flash game, space, multiplayer">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="og:image" content="http://mope.io/img/banner.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1263">
+<meta property="og:image:height" content="707">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="3 days">
+<meta name="googlebot" content="all">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="main.css" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<audio id="spawn_cell" src="audio/click.mp3"></audio>
+
+
+<script>
+    var script = document.createElement('script');
+    var tstamp = new Date();
+    script.id = 'factorem';
+    script.src = '//cdm.cursecdn.com/js/mope/cdmfactorem_min.js?sec=home&misc=' + tstamp.getTime();
+    script.async = false;
+    script.type = 'text/javascript';
+    document.head.appendChild(script);
+  </script>
+</head>
+<body>
+<div id="gameAreaWrapper">
+<input id="chatinput" type="text" class="chat-input" placeholder="Chat here..." maxlength="35" />
+<canvas tabindex="1" id="gCanvas"></canvas>
+</div>
+<div id="connecting">
+<p id="desc">Connecting...</p>
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+</div>
+<div id="preroll" class="vidAd"></div>
+<div id="startMenuWrapper">
+<div id="startMenu">
+<p id="titleText">
+mope.io
+</p>
+<p id="subTitleText">
+classic version (beta)
+</p>
+<div id="nickInputContainer" style="display: block;">
+<input id="nickInput" autofocus placeholder="Your name" maxlength="15" style="width: 100%; height: 40px; line-height: 36px;">
+</div>
+<button id="settingsButton" type="submit" style="background-color:transparent; border-color:transparent;">
+<img src="img/settings.png" width=30 height=30/>
+</button>
+<select id="serverSelect">
+<option>
+Finding Server...
+</option>
+</select>
+<div id="optionsDiv" style="margin-top: 6px; font-size: 12px; display:none; flex-wrap: wrap; justify-content: center">
+<label><input type="checkbox" id="options_noImages"><span style="color: black;">No Animal images </span></label>
+<label><input type="checkbox" id="options_noNames"><span style="color: black;">No Names & Chat </span></label>
+<label><input type="checkbox" id="options_lowGraphics"><span style="color: black;">Use Low graphics </span></label>
+<label><input type="checkbox" id="options_noJoystick"><span style="color: #194614;">No Joystick (mobile)</span></label>
+<label><input type="checkbox" id="options_leftHanded"><span style="color: #194614;">LEFT-handed Joystick</span></label>
+</div>
+<a>
+<button id="startButton" style="visibility:hidden;">Play</button>
+</a>
+<p id="spawnXpLabel">
+</p>
+
+<div id="adsenseAd">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-9141569329288428" data-ad-slot="5877265372"></ins>
+<script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div>
+</div>
+<div id="partyLink">
+<a class="partyLinkBut" id="partyLinkOpenBut">Make Party</a>
+<div id="partyLinkClicked" style="display:none;">
+<p style="">
+Your friends can join your exact game with this party link:
+</p>
+<input type="text" value="...Generating link..." readonly="" id="partyLinkTxt" style="cursor: text; width: 100px; float: left;">
+<a href="#" class="partyLinkBut" id="partyLinkCopyBut">Copy</a>
+</div>
+</div>
+<div id="howToPlayPopup">
+
+<h2>HOW TO PLAY</h2>
+<ul>
+<li>
+HOLD LEFT-click (OR SPACEBAR) to DASH
+</li>
+<li>
+RIGHT-click (or W) to shoot water
+</li>
+<li>
+Press ENTER in-game to chat
+</li>
+<li>HOLD W in a lake to dive underwater!</li>
+<li>Eat players/food outlined LIGHT-GREEN!</li>
+<li>Avoid players outlined RED (They can eat you)!</li>
+</ul>
+</div>
+<div id="updatesPopup">
+
+<h2>BETA: Try playing this old version of mope.io from Dec, 2016!</h2>
+<ul>
+<li>-Oceans were just newly released at this point!</li>
+<li>-Enjoy trying out the old mope.io, we will see how popular this version is- If enough people play this, we will improve this version with updates.</li>
+</ul>
+<h2>Back to regular :<a style="color: #5EE06A;" href="http://mope.io
+            " target="_blank">MOPE.IO</a></h2>
+</div>
+<div id="feedBLink">
+<p>Discuss mopeio:
+<a href="https://www.reddit.com/r/mopeio/" target="_blank">REDDIT PAGE</a>-- <a href="updates.txt" target="_blank">CHANGELOG</a>-
+</p>
+</div>
+</div>
+
+<script src="client.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36494583-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-36494583-13');
+  </script>
+</body>
+
+
+</html>
+
+
