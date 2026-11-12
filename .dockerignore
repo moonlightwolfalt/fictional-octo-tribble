@@ -1,0 +1,9 @@
+# Only the server, lib/ and archive/ go into the image.
+*
+!package.json
+!server.js
+!lib/
+!archive/
+# Not needed at runtime: client copies used for name extraction, search caches.
+archive/clients/
+archive/.*
