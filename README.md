@@ -107,21 +107,35 @@ python3 mope_snapshots.py --all --all-clients --commoncrawl 20170213 20170702 20
 arquivo.pt saved `client.js` only on 2017-02-13 and 2018-04-21 (and in 2025), so the
 2017 date uses the 2017-02-13 client and the 2018–2020 dates use the 2018-04-21 client.
 
-## `server.js`: play back the archive locally
+## `server.js`: play back the archive
 
-Serves the fetched files with plain Node (no dependencies):
+Serves every snapshot with plain Node (no dependencies):
 
 ```sh
 node server.js                                   # http://localhost:8080
 PORT=3000 node server.js
-ARCHIVE_DIR=mope_archive node server.js          # serve another fetched capture
+ARCHIVE_ROOT=archive node server.js              # where snapshots live (default)
+ARCHIVE_DIR=mope_archive node server.js          # add (and default to) one more folder
+DEFAULT_SNAPSHOT=arquivo-20170702 node server.js
 ```
 
-It serves `<ARCHIVE_DIR>/mope.io/` first, then `www.mope.io/` and any other host
-folder, uses the same file-naming rules as `mope_archive.rb` (so `?query` URLs
-resolve), and returns 404 for files the archive never captured. Requests are logged,
-which makes it easy to see what's missing.
+- **`/`:** the snapshot picker. Each snapshot gets a card with its date, when its start page
+  and `client.js` were really captured (and how far from the date), file counts, and
+  whether it's **Playable** or **Page only**. A timeline shows where the dates fall.
+- **`/play/<snapshot>/`:** that snapshot. Each archived page gets a small switcher pill at
+  the top for jumping to another snapshot. Absolute paths an archived page asks for
+  (`/assets/...`) come from the snapshot you opened last (remembered in a cookie).
+- **`/api/snapshots.json`**, **`/api/snapshots/<id>/manifest.json`:** the details behind
+  the picker.
+- **`/status.json`:** players and worlds per snapshot. **`/healthz`:** health check.
 
+**Playable** snapshots (2017-02-13, 2017-07-02) use the v178 client, which the stand-in game
+server below speaks. **Page only** snapshots (2018–2020) show the archived page and its
+changelog, but no `client.js` was archived for those dates. The nearest one (v209, April
+2018) stops with an error before connecting, because their pages lack elements it
+expects, and the stand-in doesn't speak v209 yet.
+
+Each snapshot gets its own game world and WebSockets at `/ws/<snapshot>/<port>/<ip>`.
 `client.js` opens WebSockets to mope.io's original servers by IP (game on port 7020,
 master on 7500), which no longer exist. `server.js` therefore injects a small shim into
 `index.html` that reroutes `ws://<ip>:<port>` to `ws://<this host>/ws/<port>/<ip>`, and
