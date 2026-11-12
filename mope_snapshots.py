@@ -34,6 +34,8 @@ Only the Python standard library is used.
 from __future__ import annotations
 
 import argparse
+import threading
+from concurrent.futures import ThreadPoolExecutor
 import gzip
 import zlib
 import itertools
@@ -131,6 +133,8 @@ class Http:
     delay: float
     retries: int
     last: float = 0.0
+    timeout: float = 90
+    backoff: float = 5    # first wait after a failure; doubles each retry
 
     def get(self, url: str, headers: dict | None = None) -> tuple[int, bytes, dict]:
         """GET with politeness delay and backoff on 429/5xx."""
@@ -141,19 +145,19 @@ class Http:
             self.last = time.time()
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, **(headers or {})})
             try:
-                with urllib.request.urlopen(req, timeout=90) as res:
+                with urllib.request.urlopen(req, timeout=self.timeout) as res:
                     return res.status, res.read(), dict(res.headers)
             except urllib.error.HTTPError as e:
                 if e.code in (429, 500, 502, 503, 504) and attempt < self.retries:
                     retry_after = e.headers.get("Retry-After")
-                    pause = float(retry_after) if retry_after and retry_after.isdigit() else 5 * 2**attempt
+                    pause = float(retry_after) if retry_after and retry_after.isdigit() else self.backoff * 2**attempt
                     log(f"    {e.code} from {urllib.parse.urlsplit(url).hostname}, waiting {pause:.0f}s")
                     time.sleep(pause)
                     continue
                 return e.code, b"", dict(e.headers or {})
             except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
                 if attempt < self.retries:
-                    pause = 5 * 2**attempt
+                    pause = self.backoff * 2**attempt
                     log(f"    network error ({e}), waiting {pause}s")
                     time.sleep(pause)
                     continue
@@ -217,7 +221,8 @@ class CaptureIndex:
 # --- Common Crawl ------------------------------------------------------------
 
 
-def commoncrawl_rows(http: Http, out: Path, since: str, refresh: bool) -> list[dict]:
+def commoncrawl_rows(http: Http, out: Path, since: str, refresh: bool,
+                     workers: int = 4, passes: int = 3) -> list[dict]:
     """Every Common Crawl capture under mope.io from crawls ending after `since`.
 
     The index server is flaky, so each crawl's result is cached as soon as it
@@ -244,28 +249,47 @@ def commoncrawl_rows(http: Http, out: Path, since: str, refresh: bool) -> list[d
     log(f"Common Crawl: {len(crawls)} crawls, {len(todo)} to search since {since[:4]} "
         f"({len(done)} already searched, {len(rows)} cached rows)")
 
-    for c in sorted(todo, key=lambda c: c["id"]):
-        q = urllib.parse.urlencode({"url": DOMAIN, "matchType": "domain", "output": "json"})
-        status, body, _ = http.get(f"{c['cdx-api']}?{q}")
+    lock = threading.Lock()
+    q = urllib.parse.urlencode({"url": DOMAIN, "matchType": "domain", "output": "json"})
+
+    def search(c) -> bool:
+        # each worker has its own connection pacing; fail fast, retry in a later pass
+        h = Http(delay=http.delay, retries=2, timeout=30, backoff=3)
+        status, body, _ = h.get(f"{c['cdx-api']}?{q}")
         if status == 404:   # "No Captures found"
             found = []
         elif status != 200:
-            log(f"  {c['id']}: index unavailable (HTTP {status}); will retry next run")
-            continue
+            return False
         else:
             found = [json.loads(l) for l in body.decode("utf-8", "replace").splitlines()
                      if l.strip().startswith("{")]
-            # only real page fetches; skip robots.txt and crawl-diagnostics records
+            # only real page fetches; skip crawl-diagnostics records
             found = [dict(r, crawl=c["id"]) for r in found
                      if "/crawldiagnostics/" not in r.get("filename", "")]
-        rows += found
-        done.add(c["id"])
-        with cache.open("a") as fh:
-            for r in found:
-                fh.write(json.dumps(r) + "\n")
-        done_file.write_text(json.dumps(sorted(done)))
-        if found:
-            log(f"  {c['id']}: {len(found)} captures")
+        with lock:
+            rows.extend(found)
+            done.add(c["id"])
+            with cache.open("a") as fh:
+                for r in found:
+                    fh.write(json.dumps(r) + "\n")
+            done_file.write_text(json.dumps(sorted(done)))
+            if found:
+                log(f"  {c['id']}: {len(found)} captures")
+        return True
+
+    for n in range(1, passes + 1):
+        todo = sorted((c for c in todo if c["id"] not in done), key=lambda c: c["id"])
+        if not todo:
+            break
+        log(f"Common Crawl: pass {n}, searching {len(todo)} crawls, {workers} at a time")
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            results = list(pool.map(search, todo))
+        failed = [c["id"] for c, ok in zip(todo, results) if not ok]
+        if failed:
+            log(f"Common Crawl: pass {n}: {len(failed)} crawls unavailable: {' '.join(failed)}")
+    left = [c["id"] for c in todo if c["id"] not in done]
+    if left:
+        log(f"Common Crawl: {len(left)} crawls still unsearched; rerun to retry them")
     return rows
 
 
@@ -741,6 +765,7 @@ def main(argv=None) -> int:
     ap.add_argument("--commoncrawl", action="store_true",
                     help="also search Common Crawl's crawls for mope.io and use its captures as a second source")
     ap.add_argument("--cc-since", default="2016", help="only Common Crawl crawls from this year on (default 2016)")
+    ap.add_argument("--cc-workers", type=int, default=4, help="Common Crawl crawls to search at once (default 4)")
     ap.add_argument("--all", action="store_true",
                     help="also include every mope.io file arquivo.pt ever captured (nearest copy to each date)")
     ap.add_argument("--all-clients", action="store_true",
@@ -758,8 +783,8 @@ def main(argv=None) -> int:
     http = Http(delay=args.delay, retries=args.retries)
     index = CaptureIndex.load(http, out / ".arquivo-cdx-mope.io.jsonl", args.refresh_index)
     if args.commoncrawl:
-        cc = commoncrawl_rows(Http(delay=max(args.delay, 2.0), retries=args.retries), out,
-                              args.cc_since, args.refresh_index)
+        cc = commoncrawl_rows(Http(delay=args.delay, retries=args.retries), out,
+                              args.cc_since, args.refresh_index, workers=args.cc_workers)
         n = index.add_rows(cc, "commoncrawl")
         log(f"Common Crawl: {n} usable captures added "
             f"({len({url_key(r['url']) for r in cc if str(r.get('status')) == '200'} - {None})} distinct files)")
