@@ -133,6 +133,33 @@ function send(res, req, status, type, body, extra = {}) {
   res.end(req.method === "HEAD" ? undefined : buf);
 }
 
+// Elements a snapshot's client.js looks up by id but its page doesn't have.
+// The archived client and page don't always match (no client.js was archived
+// for 2018-2020, so those pages run the April 2018 one), and the client stops
+// on the first missing element. Hidden stand-ins keep it going.
+const stubCache = new Map();
+function compatStubs(snap, html) {
+  const key = `${snap.id}:${html.length}`;
+  if (stubCache.has(key)) return stubCache.get(key);
+  let out = "";
+  if (snap.client?.path) {
+    const js = fs.readFileSync(snap.client.path, "utf8");
+    const want = new Set([...js.matchAll(/getElementById\("([\w-]+)"\)/g)].map((m) => m[1]));
+    const have = new Set([...html.matchAll(/\bid\s*=\s*["']([\w-]+)["']/g)].map((m) => m[1]));
+    const tags = [...want].filter((id) => !have.has(id)).map((id) => {
+      if (/^options_/.test(id)) return `<input type="checkbox" id="${id}">`;
+      if (/Select$/.test(id)) return `<select id="${id}"></select>`;
+      if (/Img$|_img$/.test(id)) return `<img id="${id}" alt="">`;
+      if (/^button_/.test(id)) return `<button type="button" id="${id}"></button>`;
+      if (/[Ii]nput$/.test(id)) return `<input id="${id}">`;
+      return `<div id="${id}"></div>`;
+    });
+    if (tags.length) out = `<div id="mope-compat-stubs" hidden aria-hidden="true">${tags.join("")}</div>`;
+  }
+  stubCache.set(key, out);
+  return out;
+}
+
 function serveFile(req, res, snap, file, extraHeaders) {
   const type = MIME[path.extname(file).toLowerCase()] || "application/octet-stream";
   if (type.startsWith("text/html")) {
@@ -140,6 +167,8 @@ function serveFile(req, res, snap, file, extraHeaders) {
     let html = fs.readFileSync(file, "utf8");
     const shim = browserShim(`/ws/${snap.id}`);
     html = /<head[^>]*>/i.test(html) ? html.replace(/<head[^>]*>/i, (m) => `${m}\n${shim}`) : shim + html;
+    const stubs = compatStubs(snap, html);
+    if (stubs) html = /<body[^>]*>/i.test(html) ? html.replace(/<body[^>]*>/i, (m) => `${m}\n${stubs}`) : stubs + html;
     const switcher = renderSwitcher(snapshots, snap.id);
     html = /<\/body>/i.test(html) ? html.replace(/<\/body>(?![\s\S]*<\/body>)/i, `${switcher}\n</body>`) : html + switcher;
     return send(res, req, 200, type, html, extraHeaders);

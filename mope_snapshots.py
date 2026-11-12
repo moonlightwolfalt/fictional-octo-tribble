@@ -52,7 +52,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_DATES = ["20170702", "20181119", "20190808", "20201218"]
+DEFAULT_DATES = ["20161002", "20170213", "20170702", "20181119", "20190808", "20201218"]
 DOMAIN = "mope.io"
 CDX_URL = "https://arquivo.pt/wayback/cdx"
 REPLAY = "https://arquivo.pt/wayback"
@@ -554,6 +554,16 @@ class Snapshot:
 
     def run(self) -> None:
         log(f"\n=== {self.target} -> {self.root}")
+        # Which capture each file already on disk came from, so a file is only
+        # reused when its nearest capture hasn't changed (e.g. a new source).
+        self.previous = {}
+        prev = self.root / "snapshot-manifest.json"
+        if prev.exists():
+            try:
+                for f in json.loads(prev.read_text()).get("files", []):
+                    self.previous[f["path"]] = (f.get("capture"), f.get("source", "arquivo.pt"))
+            except (ValueError, KeyError):
+                pass
         queue: list[tuple[str, str]] = [(f"{DOMAIN}/", "start page nearest the date"),
                                         (f"{DOMAIN}/client.js", "game client (loaded with a cache-busting ?x=)")]
         for key in self.index.within(self.target, self.window):
@@ -605,7 +615,8 @@ class Snapshot:
                 status, data = fetch_capture(self.http, cap)
                 self.cache[cache_id] = data if status == 200 else b""
             return self.cache[cache_id] or None
-        if dest.exists() and dest.stat().st_size > 0 and self.cache.get(cache_id) is None:
+        same_capture = self.previous.get(entry["path"]) == (cap.timestamp, cap.source)
+        if dest.exists() and dest.stat().st_size > 0 and same_capture and self.cache.get(cache_id) is None:
             data = dest.read_bytes()
             log(f"  have   {key}")
         elif cache_id in self.cache:
